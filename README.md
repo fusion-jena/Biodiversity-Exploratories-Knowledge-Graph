@@ -1,9 +1,9 @@
 # Biodiversity-Exploratories-Knowledge-Graph
 This repository contains files for the knowledge graph developed for the Biodiversity Exploratories (https://www.biodiversity-exploratories.de/en/), that consists of publication and dataset metadata of research endeavors related to the BE.
 
-The Mappings and Outputs folder contains the R2RML mappings to create the knowledge graph, and the resulting KG triples. 
+The Mappings and Outputs folder contains the R2RML (https://github.com/chrdebru/r2rml) mappings to create the knowledge graph, and the resulting KG triples. 
 
-The Code folder contains a notebook to pull metadata from the BExIS (Biodiversity Exploratories Information System) API, and project folders for LLM applications on the metadata.
+The Code folder contains a notebook to pull metadata from the BExIS (Biodiversity Exploratories Information System: https://www.bexis.uni-jena.de/) API, and project folders for LLM applications on the metadata.
 
 First, we investigate whether embedding models can be utilized to extract latent information from publication and dataset titles and abstracts by clustering the embedded documents.
 Then, we provide anchor concepts to the embedding space in the form of the NASA EARTHDATA GCMD earth science keywords (https://gcmd.earthdata.nasa.gov/KeywordViewer/scheme/all?gtm_scheme=all), and investigate which concepts clusters of documents form around.
