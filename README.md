@@ -10,3 +10,5 @@ Then, we provide anchor concepts to the embedding space in the form of the NASA 
 Finally, we embed the research goals of the BE (https://www.biodiversity-exploratories.de/en/about-us/research-objectives-and-background/) as anchors in the embedding space and assign documents to them.
 
 The second LLM application is concerned with the extraction of metadata categories from publication and dataset titles and abstracts to investigate whether structured information can be extracted without further human effort and which metadata categories are well suited for this task.
+
+Finally, we provide the GPT-5 Thinking chat logs that were used to produce some of the scripts in this repository.
