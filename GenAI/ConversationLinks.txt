@@ -1,0 +1,15 @@
+• build BExIS api calls
+https://chatgpt.com/share/68d98501-39d4-8005-b441-28576e04b510
+
+• building slurm scripts
+https://chatgpt.com/share/68c14388-a020-8005-8b90-3d7b70e43319
+
+• embedding clustering workflow
+https://chatgpt.com/share/68c143c1-0464-8005-b07e-ef3479433cc8
+
+• adapt scripts for metadata reconstruction
+https://chatgpt.com/share/68c1443b-97a4-8005-be5b-163056466c16
+
+• metadata reconstruction tweaks
+https://chatgpt.com/share/68c143ff-7084-8005-9d6d-c29e71786675
+

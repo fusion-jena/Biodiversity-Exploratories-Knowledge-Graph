@@ -1,0 +1,37 @@
+id,label,text
+G1_biodiversity_vs_land_use,How land-use form & intensity affect biodiversity,"Investigate how land-use configuration and management intensity shape species richness and community composition.
+
+Quantify biodiversity responses along gradients of land-use type and use intensity.
+
+Determine how different land-use practices and their intensity alter the diversity of taxa and functional groups.
+
+Assess the effects of landscape structure and land-use pressure on biodiversity patterns.
+
+Examine how the form and degree of land use drive changes in organisms and their diversity."
+G2_ecosystem_process_vs_land_use,How land-use form & intensity affect ecosystem processes,"Evaluate how land-use types and their intensity influence key ecosystem processes such as productivity and nutrient cycling.
+
+Test how management regime and land-use configuration modify rates of decomposition, carbon fluxes, and energy flow.
+
+Analyse process-level responses (e.g., soil respiration, primary production) along land-use intensity gradients.
+
+Determine how spatial arrangement and intensity of land use affect ecosystem functioning.
+
+Examine the sensitivity of ecosystem processes to differences in land-use form and management intensity."
+G3_biodiversity_interactions,How different components of biodiversity interact,"Explore interactions among biodiversity components (genes, species, functional traits, trophic levels) within ecosystems.
+
+Investigate how species, functional groups, and trophic guilds influence each other through competition, facilitation, and predation.
+
+Determine the network structure of biodiversity interactions and how they vary across contexts.
+
+Analyse cross-component linkages (taxonomic, functional, phylogenetic) and their ecological consequences.
+
+Assess how changes in one biodiversity facet propagate to others through biotic interactions."
+G4_biodiversity_to_services,How biodiversity influences ecosystem processes & services,"Quantify how biodiversity drives ecosystem functioning and the delivery of services such as pollination, carbon storage, and water regulation.
+
+Test the relationships between biodiversity (richness, evenness, trait diversity) and ecosystem process rates and service provision.
+
+Determine how losses or gains in biodiversity alter ecosystem processes and the benefits people receive.
+
+Evaluate the pathways by which biodiversity affects ecosystem functioning and service outcomes.
+
+Examine biodiversity–function relationships and their implications for ecosystem services across landscapes."

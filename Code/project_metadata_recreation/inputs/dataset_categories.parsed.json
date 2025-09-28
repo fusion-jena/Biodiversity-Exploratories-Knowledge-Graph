@@ -1,0 +1,292 @@
+{
+  "keywords": {
+    "definition": "keywords that describe the publication and its content",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "alb": {
+    "definition": "did the study inspect plots in the swabian alb / schwäbische alb exploratory?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "sch": {
+    "definition": "did the study inspect plots in the Schorfheide-Chorin exploratory?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "hai": {
+    "definition": "did the study inspect plots in the Hainich-Dün exploratory?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "plot level": {
+    "definition": "what plot level did the study take place on? Grid plots (GP), experimental plots (EP), medium-intensive research plots (MIP), very-intensive research plots (VIP)",
+    "allowed": [
+      "GP",
+      "EP",
+      "MIP",
+      "VIP",
+      "none"
+    ],
+    "raw_allowed": "GP','EP','MIP','VIP','none'"
+  },
+  "grassland": {
+    "definition": "did the study take place in grasslands?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "forest": {
+    "definition": "did the study take place in forests?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "aboveground": {
+    "definition": "did the study take place above the ground?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "belowground": {
+    "definition": "did the study take place below the ground?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "field": {
+    "definition": "did the study take place in the field?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "laboratory": {
+    "definition": "did the study take place in a laboratory?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "review": {
+    "definition": "is the study a review study?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "infrastructure": {
+    "definition": "what infrastructure type of the Biodiversity Exploratories does the study belong to? Possible answers are: 'central coordination/local management', 'data management', 'instrumentation/remote sensing', 'inventory/campaign', 'synthesis', 'theory/modeling/methodological approaches', 'none'",
+    "allowed": [
+      "central coordination",
+      "local management",
+      "data management",
+      "instrumentation",
+      "remote sensing",
+      "inventory",
+      "campaign",
+      "synthesis",
+      "theory",
+      "modeling",
+      "methodological approaches",
+      "none"
+    ],
+    "raw_allowed": "central coordination/local management','data management','instrumentation/remote sensing','inventory/campaign','synthesis','theory/modeling/methodological approaches','none'"
+  },
+  "biotic data taxon": {
+    "definition": "what taxa were investigated in the study?  Possible answers are: 'animals-invertebrates', 'animals-vertebrates', 'fungi', 'microbes', 'plants', 'none'",
+    "allowed": [
+      "animals-invertebrates",
+      "animals-vertebrates",
+      "fungi",
+      "microbes",
+      "plants",
+      "none"
+    ],
+    "raw_allowed": "animals-invertebrates', 'animals-vertebrates', 'fungi', 'microbes', 'plants','none'"
+  },
+  "biotic data type": {
+    "definition": "what types of biotic data were investigated in the study? Possible answers are: 'single species', 'multiple species', 'genetic', 'total abundance', 'none'",
+    "allowed": [
+      "single species",
+      "multiple species",
+      "genetic",
+      "total abundance",
+      "none"
+    ],
+    "raw_allowed": "single species','multiple species','genetic','total abundance','none'"
+  },
+  "processes and services": {
+    "definition": "what biological processes or services does the study cover? Possible answers are: 'biogeochemical cycle', 'decomposition', 'productivity', 'herbivory', 'pollination', 'predation/parasitism', 'dispersal', 'none'",
+    "allowed": [
+      "biogeochemical cycle",
+      "decomposition",
+      "productivity",
+      "herbivory",
+      "pollination",
+      "predation",
+      "parasitism",
+      "dispersal",
+      "none"
+    ],
+    "raw_allowed": "biogeochemical cycle','decomposition','productivity','herbivory','pollination','predation/parasitism','dispersal','none'"
+  },
+  "environmental descriptors": {
+    "definition": "what environmental descriptors can be used to describe the study? Possible answers are: 'managed land use', 'unmanaged land use', 'soil', 'climate', 'none'",
+    "allowed": [
+      "managed land use",
+      "unmanaged land use",
+      "soil",
+      "climate",
+      "none"
+    ],
+    "raw_allowed": "managed land use','unmanaged land use','soil','climate','none'"
+  },
+  "REX1": {
+    "definition": "does the study belong to the reduced land use experiment 1 (REX1)?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "REX2": {
+    "definition": "does the study belong to the reduced land use experiment 2 (REX2)?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "LUX": {
+    "definition": "does the study belong to the land use experiment (LUX)?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "FOX": {
+    "definition": "does the study belong to the forest gap experiment  (FOX)?",
+    "allowed": [
+      "yes",
+      "no"
+    ],
+    "raw_allowed": "yes','no'"
+  },
+  "project": {
+    "definition": "project of the biodiversity exploratories the dataset belongs to. May be mentioned alongside the word 'project'.",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "number of GP": {
+    "definition": "number of grid plots (GP) investigated in the dataset.",
+    "allowed": [
+      "integer"
+    ],
+    "raw_allowed": "integer"
+  },
+  "number of EP": {
+    "definition": "number of experimental plots (EP) investigated in the dataset.",
+    "allowed": [
+      "integer"
+    ],
+    "raw_allowed": "integer"
+  },
+  "number of MIP": {
+    "definition": "number of medium intensive research plots (MIP) investigated in the dataset.",
+    "allowed": [
+      "integer"
+    ],
+    "raw_allowed": "integer"
+  },
+  "number of VIP": {
+    "definition": "number of very intensive research plots (VIP) investigated in the dataset.",
+    "allowed": [
+      "integer"
+    ],
+    "raw_allowed": "integer"
+  },
+  "experimental manipulation": {
+    "definition": "Indicates experiments with manipulations on the study area or site, e.g. fertilization or fencing",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "temporal repetitions": {
+    "definition": "Indicates if measurements were repeated over time, e.g. every day, weekly, or yearly",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "plot repetitions": {
+    "definition": "Indicates if measurements were repeated on subplots (within a plot)",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "study design": {
+    "definition": "Detailed description of the study design (e.g. number and size of plots or transects) together with details on temporal and spatial repetitions.",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "sampling design": {
+    "definition": "Detailed description of the sampling design at EP level (e.g. location of transects, study plots, soil cores, or devices) and the number of samples taken at an EP. Furthermore, a detailed description of the sampling methods (e.g. size of the soil core) is provided.",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "sampling preparation": {
+    "definition": "Description of the further preparation of samples before analysis (e.g. dry biomass, ground soils, freeze samples).",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "sample analysis": {
+    "definition": "Description of all measurements in the field or lab (e.g. pH, sequencing, trait measurements, soil analysis).",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "equipment": {
+    "definition": "Equipment used for sample collection, measurements, and analysis (including calibration method of equipment).",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "data preparation": {
+    "definition": "Steps of pre-processing of raw data before data analysis (e.g. data fusion, data cleaning).",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "data analysis": {
+    "definition": "Description of the data analyis (e.g. statistical methods, indices, programs used).",
+    "allowed": null,
+    "raw_allowed": "any"
+  },
+  "content type": {
+    "definition": "The content type of the data. Possible answers are: 'structured data', 'unstructured data', 'GIS', 'model/scripts','external link'",
+    "allowed": [
+      "structured data",
+      "unstructured data",
+      "GIS",
+      "model",
+      "scripts",
+      "external link"
+    ],
+    "raw_allowed": "structured data','unstructured data','GIS','model/scripts','external link'"
+  }
+}

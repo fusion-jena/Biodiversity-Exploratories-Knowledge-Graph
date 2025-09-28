@@ -1,0 +1,5 @@
+goal1_id,goal1_label,n_docs
+G3_biodiversity_interactions,How different components of biodiversity interact,1225
+G1_biodiversity_vs_land_use,How land-use form & intensity affect biodiversity,1153
+G2_ecosystem_process_vs_land_use,How land-use form & intensity affect ecosystem processes,855
+G4_biodiversity_to_services,How biodiversity influences ecosystem processes & services,146

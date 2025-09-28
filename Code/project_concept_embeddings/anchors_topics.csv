@@ -1,0 +1,336 @@
+anchor_id,anchor_label,n_docs,top_terms
+NUTRITIONAL CONSTRAINTS,NUTRITIONAL CONSTRAINTS,113,food; webs; food webs; soil; prey; trophic; heterogeneity; species; chapter; nutrient; plant; diversity
+SPECIES DISTRIBUTION MODELS,SPECIES DISTRIBUTION MODELS,89,biodiversity; species; diversity; dispersal; ecological; seed; ecosystem; plant; grasslands; research; spatial; interactions
+TREE RINGS,TREE RINGS,33,growth; width; tree; trees; age; stem; instead; annual; belongdead; traits; species; individuals
+MORPHOLOGICAL ADAPTATION,MORPHOLOGICAL ADAPTATION,29,heterogeneity; trait; traits; ecological; matrix; phylogeny; diversity; land-use; plasticity; phenotypic; variation; stand structure
+METAGENOMICS,METAGENOMICS,26,metabarcoding; pollen; dna; resistance; samples; libraries; metagenomic; genes; soil; diversity; genome; bark
+SOIL ROOTING DEPTH,SOIL ROOTING DEPTH,24,root; fine root; fine; soil; roots; mycorrhizal; soil structure; wurzeln; decomposition; grünland; x-ray; colonization
+CARBON DIOXIDE,CARBON DIOXIDE,19,co2; fixation; rates; soils; kohlenstoff; soil; böden; doc; cwd; temperate; temperate forest; boden
+FATTY ACID DESATURASE,FATTY ACID DESATURASE,19,enzyme; deadwood; fungal; wood; activities; enzymes; enzyme activities; decomposition; enzymaktivitäten; active; lignin; fungal community
+PLANT CHARACTERISTICS,PLANT CHARACTERISTICS,19,traits; leaf; plant; plant biomass; root; biomass; aboveground; trait; patterns; plant nutrition; soil fertility; temporal variation
+POLLINATOR SPECIES,POLLINATOR SPECIES,18,pollen; pollinator; pollination; pollination services; health; pollinators; services; bombus; foraging; flower; bumblebee; behaviour
+MUSHROOMS,MUSHROOMS,18,amf; arbuscular; arbuscular mycorrhizal fungi; arbuscular mycorrhizal; mycorrhizal fungi; mycorrhizal; symbiosis; though; fungi; plant; soil sampling; plant roots
+SOIL SALINITY/SOIL SODICITY,SOIL SALINITY/SOIL SODICITY,17,carbon; som; sulfur; soil; carbon nitrogen; nitrogen; core project soil; project soil; organic carbon; organic; core project; soil organic
+HERBIVORY,HERBIVORY,17,herbivory; root; plant; root herbivory; herbivore; insect; herbivores; interaction; plant community; host plant; larvae; plants
+REFORESTATION/REVEGETATION,REFORESTATION/REVEGETATION,16,regeneration; extensification; inventory; restoration; title forest inventory; forest inventory; title forest; altered; shrubs; selective; bestand; natural
+LAND USE/LAND COVER CHANGE,LAND USE/LAND COVER CHANGE,16,arten; land-use; litter; life-history; landnutzung; traits; species; decomposition; land; land use; intensity; decomposer
+MICROFOSSIL,MICROFOSSIL,16,fungal; fungi; biocrusts; protists; lui; bacterial; soil; bacteria; gaps; microorganisms; bakterien; litter
+ENVIRONMENTAL VULNERABILITY INDEX (EVI),ENVIRONMENTAL VULNERABILITY INDEX (EVI),15,landscape; natur; index; cultural; demand; stand; biodiversity; risk; vertical; nature; metrics; complexity
+SILVICULTURE,SILVICULTURE,15,silvicultural; smi; silvicultural management; management intensity; management; stands; structural; stand; forests; forest; tree species; forest stands
+GEOMAGNETIC FORECASTS,GEOMAGNETIC FORECASTS,14,events; variabilität; mowing; sentinel-2; time series; series; formi; intensity; einfluss; effekt; konnte; abbau
+POLLEN,POLLEN,14,pollen; bumblebee; colonies; resource; epichloë; amino; floral; bumblebees; resource use; flowering; endophytes; landnutzung
+VEGETATION COVER,VEGETATION COVER,13,vegetation; vegetation records; records; cover species; title vegetation records; title vegetation; vegetation records grassland; records grassland; cover; vegetation composition; richness community; conduct
+ORGANIC MATTER,ORGANIC MATTER,13,involved; plant biomass; formation; litter; plant; matter; organic; fungi; annually; plant life; maom; circa
+SLR (SATELLITE LASER RANGING),SLR (SATELLITE LASER RANGING),13,satellite; synthetic; resolution; sentinel-2; lui; gps; remote sensing; sensing; images; time series; remote; spatial
+METHANE,METHANE,13,methane; fluxes; net; sink; oxidation; soils; atmospheric; gas; soil; reduction; grassland soils; sinks
+BREEDING PRODUCTIVITY,BREEDING PRODUCTIVITY,13,species richness; richness; productivity; species; mites; indirect; reproduction; fertilization; performance; direct; old; populationen
+SURFACE SOIL MOISTURE,SURFACE SOIL MOISTURE,13,soil; mineral soil; soil title; mineral; crusts; biological soil; sampling campaign; campaign; soil sampling campaign; soil sampling; upper; biological
+BERYLLIUM-10 ANALYSIS,BERYLLIUM-10 ANALYSIS,12,alkaloid; instead; ticks; prevalence; concentrations; sulfur; activity; chemical; perenne; infected; festucae; extracts
+MASS EXTINCTIONS,MASS EXTINCTIONS,12,land-use; arthropod; biomass; arten; intensity; land-use intensity; diversity; removal; mowing; landnutzung; indirect; fertilization
+ANIMAL BREEDING AND GENETICS,ANIMAL BREEDING AND GENETICS,12,genetic; markers; genetic diversity; seedling; genetic variation; beech; european beech fagus; tested; population; diversity; species; diversity functioning
+CYANOBACTERIA (BLUE-GREEN ALGAE),CYANOBACTERIA (BLUE-GREEN ALGAE),11,flower; depth; acidobacteria; flowers; rhizosphere; polar; bacteria; nov; strains; soil; strain; subjected
+DATA ANALYSIS AND VISUALIZATION,DATA ANALYSIS AND VISUALIZATION,11,domain; knowledge; system; daten; research; diese; informationen; biodiversity research; visual; systems; scientists; image
+BIODIVERSITY FUNCTIONS,BIODIVERSITY FUNCTIONS,11,services; ecosystem; ecosystem services; biological soil; biodiversity; crusts; pollinator; trophic; richness; bee; biological; complementary
+MICROBIAL SOURCE TRACKING,MICROBIAL SOURCE TRACKING,11,distances; away; hew10; microbial; title tree; bestimmte; log; labelled; spruce; artificial; microbial community; root
+SOIL MOISTURE,SOIL MOISTURE,11,soil; enzyme; enzymaktivitäten; enzyme activities; activities; biota; boden; soil properties; rhizosphere; properties; verteilung; root
+SUBMESOCALE EDDIES,SUBMESOCALE EDDIES,11,seed; seed addition; disturbance; sade; seeds; one; added; enzyme; addition; modell; height; addition disturbance experiment
+BIODEGRATION,BIODEGRATION,11,decomposition; wood; wood decomposition; decay; litter; dead; dead wood; litter decomposition; belongdead; wood decay; sporocarp; title belongdead
+ECOSYSTEM FUNCTIONS,ECOSYSTEM FUNCTIONS,11,multifunctionality; ecosystem; functional; traits; ökosystemfunktionen; states; functions; measures; ecosystem functions; ecosystem services; services; rare species
+SATELLITE SOIL MOISTURE INDEX,SATELLITE SOIL MOISTURE INDEX,11,soil; vip plots; vip; respiration; title soil; soil respiration; vip plots abstract; fields; campaign; coordinated; schorfheide-chorin hainich-dün; soil sampling campaign
+DIGITAL ELEVATION/TERRAIN MODEL (DEM),DIGITAL ELEVATION/TERRAIN MODEL (DEM),10,digital; elevation; slope; aspect; landscape; biodiversity exploratories regions; regions abstract; exploratories regions; coordinates; derived; original; experiment fox plots
+FOREST MENSURATION,FOREST MENSURATION,10,forest inventory; biomass grassland; inventory; index; measurement; title forest inventory; forest; title forest; biomass; plots title; repeated; deadwood
+SEDIMENTS,SEDIMENTS,10,decomposition; decomposition rate; mammals; cadaver; rate; dead; land use intensity; use intensity; days; traps; fieldwork; arthropod
+PHOSPHORUS,PHOSPHORUS,10,phosphorus; soil; ha-1; land-use; median; partitioning; intensity; fractions; mineral; fluxes; precipitation; rna
+FOREST HARVESTING AND ENGINEERING,FOREST HARVESTING AND ENGINEERING,10,traps; sampling dates; dates; title beech exclusion; beech exclusion; title beech; abstract waldinventur; arthropod; waldinventur; exclusion; trees; abstract contains
+FERTILIZERS,FERTILIZERS,9,seedling; fertilization; litter; grassland species; fertilization experiment; fertilizer; experiment; cover; vegetation; species; title fertilization; lanceolata
+PROTISTS,PROTISTS,9,protists; pathogens; illumina sequencing; vips; taxonomic functional; soil title; proportion; taxonomic; diversity; free-living; phylum; parasites
+PLANT PHENOLOGY,PLANT PHENOLOGY,9,phenology; variation; herbs; evolution; change; flowering; pflanzen; iii; global change; understory; climate; plants
+LAND SURFACE MODELS,LAND SURFACE MODELS,9,images; landscape; vehicles; unmanned aerial vehicles; aerial vehicles; unmanned; unmanned aerial; schätzung; aerial; surrounding; metrics; dendrometer
+METAGENOME ASSEMBLED GENOMES (MAGs),METAGENOME ASSEMBLED GENOMES (MAGs),9,resistance; genome; genome sequence; selected; genes; bacteria; sequence; decomposition; variety; soil; gene; nematodes
+FLAGELLATES,FLAGELLATES,9,plantago; parasitoid; fertilization experiment; beetles; lanceolata; plantago lanceolata; vegetation structure; fertilization; incidence; title abundance; abundance; surrounding
+AMMONIA,AMMONIA,8,nitrate; ammonium; nitrification; denitrification; ph-wert; influenced; abundanz; beeinflusst; type; alpha beta; soil; rrna
+FUNGI,FUNGI,8,fungal; fungal diversity; soil fungi; diversity community composition; fungi; diversity community; soil; otu; living; diversity; soil sampling; plants
+REPTILES,REPTILES,8,dung beetles; dung; beetles; traps; small; cattle; small mammals; live; mammal; mammals; species list; emergence
+MICROFAUNA,MICROFAUNA,8,collembola; rhizosphere; soil; plant functional; predation; yeasts; diversität; bacteria; fertilizer; nematodes; filamentous; fungi
+TEMPERATE CONIFEROUS FOREST,TEMPERATE CONIFEROUS FOREST,8,chemical; traits; root-associated; abstract objective; fine; dead wood; fungal community; objective; temperate forests; dead; fine roots; spp
+BROWN ALGAE,BROWN ALGAE,8,epichloë; nov; phyllosphere; strains; c16; c18; strain; isoliert; festuca; isolated; isolates; sequence
+TOPOGRAPHIC EFFECTS,TOPOGRAPHIC EFFECTS,7,metrics; height; patch; index; landscape; leaf; density; estimation; decomposition rate; taraxacum; land; grazing
+OXYGEN ISOTOPE ANALYSIS,OXYGEN ISOTOPE ANALYSIS,7,isotopic; forest gap; inorganic; fox plots; core project soil; organic; ökologisch; project soil; conventional; fox; phosphorus; samples
+FORESTS,FORESTS,7,forest eps; crown projection area; projection area; crown projection; area; projection; basal area; composition forest; crown; basal; understory; describes
+ENVIRONMENTAL ASSESSMENTS,ENVIRONMENTAL ASSESSMENTS,7,restoration; measures; goals; ecological; measure; indicators; synthesis; assigned; attributes; success; landscape structure; per
+LAND USE/LAND COVER CLASSIFICATION,LAND USE/LAND COVER CLASSIFICATION,7,information; abstract information; title grassland; updated; fieldwork; farmers; surroundings; observations; members; land; given; file
+MACROFAUNA,MACROFAUNA,7,macrofauna; bacterial; recovery; core; meso macrofauna; mesofauna; meso; soil; use intensity; land use intensity; microbiome; earthworms
+LAND SURFACE FEEDBACKS,LAND SURFACE FEEDBACKS,7,herbivory; aboveground; feedback; process rates; outcome; process; climatic; plant performance; land-use; feedbacks; natural; land-use intensity
+MICROCLIMATE,MICROCLIMATE,7,microbial; biogeography; soil microorganisms; bodenmikroorganismen; soil; microbial communities; microorganisms; soil microbial; verteilung; properties; regional; mesic
+DROUGHT,DROUGHT,7,drought; drought resistance; survival; growth; resistance; temperate grassland species; grassland species; hydrological; buchen; temperate grassland; performance; garden
+BIOLOGICAL HAZARDS MAPPING,BIOLOGICAL HAZARDS MAPPING,7,vectors; health; prevalence; ticks; vector; pathogen; livestock; parasites; resistance; infections; potential; old
+CANOPY TRANSMITTANCE,CANOPY TRANSMITTANCE,7,canopy; image; simulated; camera; optischen; auflösung; optical; threshold; exposure; alternative; fox; methode
+LAND USE CLASSES,LAND USE CLASSES,6,information; abstract information; updated; hai abstract; land use; fieldwork; land; farmers; use; observations; members; species responses
+SPECIES COMPETITION,SPECIES COMPETITION,6,competition; competitive; growth; interspecific; bumblebees; will; bumblebee; traits; pollination; pollinators; wild; interactions
+WATER MANAGEMENT,WATER MANAGEMENT,6,leaching; management; nitrogen; grazing; risk; nutrient; vegetation composition; cycling; intensity; mowing; agricultural; management intensity
+SPECIES DISTRIBUTION,SPECIES DISTRIBUTION,6,bees; myriapoda; beech stands; genetic variation; wild; across three; literature; genetic; three exploratories; stands; sch; traits
+FERNS AND ALLIES,FERNS AND ALLIES,6,epichloe; amf; assemblages; endophyte; fungal; region land use; region land; infection; modify; perenne; perennial; dependence
+CROP DENSITY,CROP DENSITY,6,density; land-use intensity experiment; bank; plots hainich; intensity experiment; land-use; diversity; assess; seed; grassland eps; diversity title; land-use intensity
+GRASSLANDS,GRASSLANDS,6,species identities; vegetation records grassland; identities; eps header; eps header without; header without species; header without; without species; records grassland; vegetation; repeated; title vegetation records
+POLYUNSATURATED FATTY ACID,POLYUNSATURATED FATTY ACID,6,fatty; profiles; prey; fatty acid; food webs; webs; food; acid; fatty acids; soil food; arten; acids
+FOREST YIELDS,FOREST YIELDS,6,tree; forest; holes; resource availability; directly indirectly; different aspects; indirectly via; investigated different; inventory; diversity composition; forest stand; abstract investigated
+GELBSTOFF,GELBSTOFF,6,dom; throughfall; stemflow; doc; organic matter; organic; matter; throughfall stemflow; coniferous; dissolved; leachate; dissolved organic
+AMMONIUM AEROSOLS,AMMONIUM AEROSOLS,5,deposition; deadwood; soil solution; ammonium; solution; simulated; nine; microbial; archaea; forest ecosystems; concentrations soil; fungal communities
+VEGETATION TEMPERATURE,VEGETATION TEMPERATURE,5,variation; temperature; light; width; soil temperature; epichloë; drought; humidity; traits; alkaloids; leaf; grass
+TRANSCRIPTOMIC ANALYSIS,TRANSCRIPTOMIC ANALYSIS,5,pratense; growth; expression; cutting; mechanismen; phenotypic; analysen; contigs; involved; molecular; protein; veränderungen
+PLANT DISEASES/DISORDERS/PESTS,PLANT DISEASES/DISORDERS/PESTS,5,pathogens; prevalence; disturbance; relation land use; relation land; use type intensity; disturbance experiment; fungal; land use type; use type; counting; experiment
+FOREST CONSERVATION,FOREST CONSERVATION,5,management; nature; forests; tree; tree species; wälder; forest management; forest; biodiversity; values; conservation; vielfalt
+FOREST SCIENCE,FOREST SCIENCE,5,names; categories; history; percentage; soil title; table; fungal; studying; forest soil; sequencing; tree species; belonging
+NITROGEN,NITROGEN,5,bags; nitrate; resin; nitrogen content; concentrations soil; material; bag; caught; contact; concentration; incubated; filled
+SOIL MOISTURE/WATER CONTENT,SOIL MOISTURE/WATER CONTENT,5,soil water; water; water content; soil; content; core project soil; project soil; contents; core project; content soil; core; project
+SOIL ORGANIC CARBON (SOC),SOIL ORGANIC CARBON (SOC),5,turnover; soil; carbon; som; organic; organic carbon; fraction; soil organic; storage; stocks; fractions; forest grassland
+SUB-BOTTOM PROFILE,SUB-BOTTOM PROFILE,5,subplot; belongdead; photos; visible; subplots; title belongdead; every; logs; insert; libraries; may july; possible
+SOIL COLOR,SOIL COLOR,5,som; transform; soil; abstract soil; gehalt; flowering; zusammensetzung; geographic; flower; soil organic; böden; plant communities
+ANIMAL ECOLOGY AND BEHAVIOR,ANIMAL ECOLOGY AND BEHAVIOR,5,activity; alb hai sch; abstract assessment; hai sch; alb hai; summer; assessment; hai; sch; monitoring; experimental plots; experimental
+ANGIOSPERMS (FLOWERING PLANTS),ANGIOSPERMS (FLOWERING PLANTS),5,amf; plantago; root; agriotes; lanceolata; plantago lanceolata; colonization; herbivore; grassland plant; erhöhte; einfluss; grasses
+AMPLICON SEQUENCING,AMPLICON SEQUENCING,5,amplicon; asvs; variants; sequencing; interaction networks; networks; prokaryotes; primer; sequence; indices; rrna gene; wood
+HYDROGEN OXIDE PROFILES,HYDROGEN OXIDE PROFILES,5,plots samples; organic layers; horizons; taken coordinated; samples taken coordinated; taken coordinated sampling; coordinated sampling; abstract determination; minsoil; title minsoil; coordinated; organic
+LAKE LEVELS,LAKE LEVELS,5,lichen; richness; archaea; species richness; soil moisture; pastures; flechten; moisture; species; species higher; forest soils; plant species
+HETEROTROPHIC RESPIRATION (Rh),HETEROTROPHIC RESPIRATION (Rh),5,respiration; soil respiration; nitrogen; mosses; soil; deadwood; diazotrophs; nitrogen fixation; metabolic; fixation; co2; project
+RNA,RNA,5,ranunculus; rrna; rhizosphere; rrna gene; trifolium pratense; pratense; bacterial; gene; trifolium; stored; high-throughput sequencing; region
+SHORELINE MAPPING,SHORELINE MAPPING,5,mapping; maps; office; areas; historical; zones; acquired; hainich; hainich abstract; file state environmental; environmental office brandenburg; environmental office
+VEGETATION HEIGHT,VEGETATION HEIGHT,5,species identities; identities; height; title vegetation records; title vegetation; eps header; two subplots; vegetation records grassland; eps header without; without species; header without species; header without
+FOREST PRODUCTS/COMMODITIES,FOREST PRODUCTS/COMMODITIES,5,index; landnutzung; robust; forest; forests; timber; forest inventory; reference; inventory; compound index; baumartenzusammensetzung; quantifizierung
+LIDAR WAVEFORM,LIDAR WAVEFORM,4,lidar; point clouds; clouds; point; laser; canopy cover; laser scanning; scanning; subplot; canopy; ground; unmanned aerial
+GREEN ALGAE,GREEN ALGAE,4,green; algal; molecular; algae; cultures; green algae; otus; soils; green algal; terrestrial; sequences; tree bark
+PERMAFROST/METHANE RELEASE,PERMAFROST/METHANE RELEASE,4,phosphate; release; stickstoff; situ; dissolved; methylotrophs; net; böden; fluxes; soils; organic layers; kinetics
+LIZARDS/SNAKES,LIZARDS/SNAKES,4,lichen; schnecken; lichens; snails; flechtenarten; feeding; frequency; frequent; snail; list; defense; species
+MARSH,MARSH,4,coarse woody debris; coarse woody; woody debris; debris; coarse; mahd; woody; plant species diversity; grazed; artenzahl; forest inventory; beweidung
+AMPLICON SEQUENCE VARIANT (ASV),AMPLICON SEQUENCE VARIANT (ASV),4,bark; asv; asvs; read; algal; numbers; sample; inference; microbiome; package; metabarcoding; bacterial
+FOREST FIRE DANGER INDEX,FOREST FIRE DANGER INDEX,4,index; formi; management; management intensity; forest management intensity; forest management; intensity; disturbance; dead wood; dead; wäldern; forest
+INSECTS,INSECTS,4,thistles; invertebrates; agricultural used; moth; prominent; belong; feed; group; status; damage; dendrometer; herbivores
+QUANTITATIVE POLYMERASE CHAIN REACTION (qPCR),QUANTITATIVE POLYMERASE CHAIN REACTION (qPCR),4,genes; resistance; quantification; pcr; abundance; quantitative; real; title abundance; mobile; threshold; techniques; absolute
+BLOCKING INDEX,BLOCKING INDEX,4,signifikant; stand; september; year; grassland site; höhe; significantly; jahres; european beech; gap; calculated; vertical
+SPECIES MIGRATION,SPECIES MIGRATION,4,samen; schnecken; seeds; gastropods; ants; seed; dispersers; slugs; beech forests; might; beech; könnten
+SOIL CLASSIFICATION,SOIL CLASSIFICATION,4,grid plots; grid; soil; classification; title soil; taxonomic; mineral soils; jena; soil sample; abstract used; abstract file; soil types
+CHLOROPHYLL CONCENTRATION,CHLOROPHYLL CONCENTRATION,4,fluxes; nutzungsintensität; biodiversität; region; concentrations; biocrusts; element; einfluss; intensity biodiversity; intensity; biodiversity; mitteleuropäischen
+SOIL PRODUCTIVITY,SOIL PRODUCTIVITY,4,aggregation; seeding; productivity; root herbivory; biotic abiotic factors; root; soil; abiotic factors; herbivory; resilience; plant community; biotic abiotic
+CATTLE/SHEEP,CATTLE/SHEEP,4,wild; rodents; mammals; cases; europe; small mammals; scarabaeoidea; bats; site; exposure; lichens; compiled
+SOIL HORIZONS/PROFILE,SOIL HORIZONS/PROFILE,4,amf; profile; basic; description; soil; bedry; title bedry; title functional; abstract screening; soil type; screening; abstract file
+CLOUD-SCREENED TOTAL COLUMN NITROGEN DIOXIDE (NO2),CLOUD-SCREENED TOTAL COLUMN NITROGEN DIOXIDE (NO2),4,carbon nitrogen; nitrogen; carbon; soil; crust-free soil; crust-free; abstract determination; total nitrogen; bulk density; crust; soil sampling; concentrations
+BIRDS,BIRDS,4,bird; birds; food; preferences; aktivität; winter; morphological traits; count; weather; ecological; activity; traits
+GLYOXAL,GLYOXAL,4,epichloë; alkaloid; endophytes; grass; alkaloids; intoxication; toxic; epichloë endophytes; concentrations; grass species; intoxication risks; perenne
+BIBLIOGRAPHIC DATABASES,BIBLIOGRAPHIC DATABASES,4,bexis; daten; hilfe; möglichst; insert; automatisch; libraries; projekt; ausgewertet; waldinventur; welches; zukünftige
+BIN/BINNING,BIN/BINNING,4,reads; sequencing; assembled; beech; coverage; illumina sequencing; fungal; external; activity; samples; litter; link
+ISOTOPES,ISOTOPES,4,instead; ermittelt; standard; funktion; proben; über; iii; erster; fand; messungen; ende; erstellung
+DEFLATION,DEFLATION,4,process rates; dung; rates; whether; mediated; arthropod; process; seed; medium-term; title arthropod; affected climate; iii whether
+DECOMPOSITION,DECOMPOSITION,4,litter; decomposition; chemical composition; chemical; activity; composition; decomposition process; process; leaves; fungal; dung; chemistry
+BACKGROUND INFORMATION,BACKGROUND INFORMATION,3,später; informationen; bexis; weiteren; daten; pilze; plant communities; plant biomass; plant; placed; place; plants title
+DATA ANALYSIS,DATA ANALYSIS,3,daten; service; datensätze; integration; statistical; functionality; tools; besteht; verwendung; platform; statistics; configuration
+CUMULUS HUMILIS,CUMULUS HUMILIS,3,activity; common; thüringen; thuringia; coleoptera; records; vegetation height; thüringer; überblick; across species; lux; reduced
+SLIME MOLDS,SLIME MOLDS,3,genome; pilz; draft genome; draft; genom; contigs; pathogen; title draft genome; draft genome sequence; title draft; genome sequence; holz
+RANGE CHANGES,RANGE CHANGES,3,movement; distances; heterogeneous; ranges; forest; stands; ranging; attributes; patterns; daily; hierarchical; production
+SOLAR INDUCED FLUORESCENCE,SOLAR INDUCED FLUORESCENCE,3,rhizosphere; phytometers; phytometer; abstract based; transplanted; table abstract; counts; read; forb; chosen; grown; technique
+DROUGHT/PRECIPITATION RECONSTRUCTION,DROUGHT/PRECIPITATION RECONSTRUCTION,3,instead; hydrological; sew6; dgl055; ei090; ah020; hew42; regeneration; drought; belongdead; direct; soil samples
+DECISION TREE,DECISION TREE,3,overview; fieldwork; table; discussion; phases; assembly; containing; previous; better; context; year; group
+CENTIPEDES,CENTIPEDES,3,instead; deadwood; gap; gaps; ei090; hew42; sew6; dgl055; ah020; formation; arthropod; belongdead
+VOLATILE ORGANIC COMPOUNDS,VOLATILE ORGANIC COMPOUNDS,3,dung; compounds; beetles; dung beetles; beetle; organic compounds; synthetic; vertebrate; cadavers; six; resources; components
+CLIMATE INDICATORS,CLIMATE INDICATORS,3,climate; wind; interface; web; monitoring; time series; series; http www; http; base; org; aggregated
+SPECIES/POPULATION INTERACTIONS,SPECIES/POPULATION INTERACTIONS,3,interaktionen; interactions; gramm; bodenbakterien; pro; organismen; bakterien; interaction; organisms; parameters; boden; management affects
+TOTAL ELECTRON CONTENT,TOTAL ELECTRON CONTENT,3,extractable; soil; total nitrogen; total; organic carbon; organic; soil samples; soil sampling campaign; soil sampling; sampling campaign; represent; campaign
+WILDLAND FUELS,WILDLAND FUELS,3,aromatic; lignin; dead wood; date; dead; variability; wood; vip; deadwood; sommer; abstract waldinventur; cwd
+MARSHES,MARSHES,3,pastures; grazed; bryophytes; wiesen; times; dactylis glomerata; glomerata; weiden; dactylis; mesic; meadows mown pastures; meadows mown
+VEGETATION FRACTION,VEGETATION FRACTION,3,root-associated; organic layer; objective; layer; vegetation; mineral; scales; soil fungi; abstract vegetation; mineral topsoil; root herbivores; recording
+KP INDEX,KP INDEX,3,indices; experiment fox; shapes; contain; fox; made; three exploratories; fox abstract; hanich-dün; university; aufgenommen; schorfheide
+LAND SURFACE/AGRICULTURE INDICATORS,LAND SURFACE/AGRICULTURE INDICATORS,3,cost; pflanzen; auftreten; indikatoren; reference; pflanzenarten; measures; monaten; calculations; regionaler; einfluss; indikator
+USE/FEEDING HABITATS,USE/FEEDING HABITATS,3,damage; habitat; pine; trees; feeding; deciduous; cover; large; age-class; food; forests; mature
+MINING/DRILLING SITE,MINING/DRILLING SITE,3,land cover; cover; land; title beech exclusion; beech exclusion; title beech; extraction; exploratories title; bestimmung; exclusion; bodens; exploratories
+NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI),NORMALIZED DIFFERENCE VEGETATION INDEX (NDVI),3,lui; index; lui index; database; landnutzung; intensity; land-use; reference; grünland; grazing; http; http www
+EUTROPHICATION,EUTROPHICATION,3,nitrification; sampling campaign ssc; campaign ssc; ssc; hainich-dün schorfheide; hainich-dün schorfheide chorin; chorin; schorfheide chorin; soil sampling campaign; soil sampling; sampling campaign; campaign
+FRACTION OF ABSORBED PHOTOSYNTHETICALLY ACTIVE RADIATION (FAPAR),FRACTION OF ABSORBED PHOTOSYNTHETICALLY ACTIVE RADIATION (FAPAR),3,phytometer; planted; millefolium; achillea millefolium; achillea; pratensis; plants; glomerata; dactylis glomerata; dactylis; purchased; plants grassland
+DENITRIFICATION RATE,DENITRIFICATION RATE,3,nitrate; denitrification; nitrification; upon; dynamics; water contents; contents; addition; oxide; different; investigated different; oxygen
+GAS HYDRATES VERTICAL/GEOGRAPHIC DISTRIBUTION,GAS HYDRATES VERTICAL/GEOGRAPHIC DISTRIBUTION,3,heg; grassland vips; scalemic abstract; will; spatial distribution; plots different; bacterial; soil bacteria; hainich; intermediate; vips; grassland
+PIGMENTS,PIGMENTS,3,flower; pollinators; bienen; pollination; background; colour; habitats; vielfalt; floral; networks; insekten; pflanzenarten
+FOREST PLANTATION,FOREST PLANTATION,3,title fertilization experiment; surrounding vegetation; fertilization experiment; title fertilization; structure diversity; vegetation structure; vegetation; mapping; matrix; investigation; plantago lanceolata; plantago
+PALMER DROUGHT CROP MOISTURE INDEX,PALMER DROUGHT CROP MOISTURE INDEX,3,drought; survival; mowing intensity; mowing; grassland species; drought resistance; index; perennial; herbaceous; species; woody; resistance
+NUTRIENT CYCLING,NUTRIENT CYCLING,3,water; nutrient; mineralization; precipitation; cycle; soil; vips; abstract aims; rainfall; soil processes; greenhouse gas; water nutrient
+ISOTOPE MEASUREMENTS,ISOTOPE MEASUREMENTS,3,instead; isotopes; sew6; ah020; dgl055; ei090; hew42; belongdead; stable; measured; institute; sew6 es017 instead
+COMPOSITION/TEXTURE,COMPOSITION/TEXTURE,2,texture; soil title soil; samples vip plots; samples vip; abstract screening; soil texture; screening; vip plots abstract; soil title; vip plots; mixed; vip
+BEDROCK LITHOLOGY,BEDROCK LITHOLOGY,2,belongdead; time period; photos; may july; log; every; title belongdead; july; logs; period; hai abstract; sch abstract
+AE INDEX,AE INDEX,2,leaf area; forest eps; index; leaf; title leaf; sch alb; alb title; satellite; hai sch; area; scanning; airborne
+APICULTURE,APICULTURE,2,colonies; bumblebee; placed; competitive; bee; bumblebees; bees; pollination; wild; services; investigate land; investigate land use
+ATMOSPHERE/SURFACE INTERACTIONS,ATMOSPHERE/SURFACE INTERACTIONS,2,variety factors; investigate land use; investigate land; abstract ecosystem; affected variety factors; agricultural used; affected variety; insectscale; title insectscale; conducted investigate; variety; landscapes
+ABYSSAL HILLS/PLAINS,ABYSSAL HILLS/PLAINS,2,insert; sch alb; libraries; aerial; earth; overview; sch; topsoil subsoil; large; constructed; grassland vips abstract; hainich
+BALEEN WHALES,BALEEN WHALES,2,vertebrates; flechten; schnecken; seed; dispersers; ants; gastropods; wichtige; nutzung; dispersal; während; holes
+CAVE DEPOSITS,CAVE DEPOSITS,2,instead; belongdead; see belongdead; sew6; hew42; ei090; ah020; dgl055; stem; see; soil samples; soil sample
+CRYPTOMONADS,CRYPTOMONADS,2,strains; trifolium repens; repens; isolated; bscs; strain; trifolium; nov; genetic diversity; verbreitet; genetic; vorkommen
+CILIATES,CILIATES,2,strain; c16; nov; novel; family; novel species; feature; genus; acids; isolated; c18; gen nov
+TORNADO PATH WIDTH,TORNADO PATH WIDTH,2,distance; ways; script; every; classification; spatial scales; next; multiple; scales; secondary; habitat; spatial
+CONTOUR MAPS,CONTOUR MAPS,2,maps; closed; gps; files; coordinates; vips; open; eps; colour; implementation; white; grid plots
+BIOMASS,BIOMASS,2,biomass grassland; biomass; measurement; grassland eps abstract; two subplots; per; per plot; above-ground; grassland eps; eps abstract; subplot; subplots
+COORDINATE REFERENCE SYSTEM,COORDINATE REFERENCE SYSTEM,2,coordinates; stations; format; grid; overview; provided; inventory; meteorological; gps; automatically; abstract provides; grid plots
+BIOSPHERIC INDICATORS,BIOSPHERIC INDICATORS,2,biosphere; reserve; http; http www; zone; www; detail; brandenburg; area; title schorfheide; march; zones
+STATION HEIGHT,STATION HEIGHT,2,base; stations; title dendrometer; dendrometer; pilzen; plant community; plant communities; plant biomass; plant; placed; place; plants title
+CRANES AND ALLIES,CRANES AND ALLIES,2,seeds; slugs; samen; seed; schnecken; ants; dispersal; rodents; consumption; consumed; fressen; kot
+CORAL DEPOSITS,CORAL DEPOSITS,2,beetle; strains; coleoptera; cadavers; variation; isolates; genus; zusammensetzung; temperature; bscs; member; piglet
+DROUGHT SEVERITY,DROUGHT SEVERITY,2,drought; seed; time series; series; lui; density; sensors; time; sentinel-2; indices; richness; spatial
+DORIS (DOPPLER ORBITOGRAPHY AND RADIOPOSITIONING BY INTEGRATED SATELLITE),DORIS (DOPPLER ORBITOGRAPHY AND RADIOPOSITIONING BY INTEGRATED SATELLITE),2,hyperspectral; regions abstract; biodiversity exploratories regions; exploratories regions; images; digital; exploratories; different levels; consecutive; accuracy; red; spatial resolution
+DISSOLVED CO2,DISSOLVED CO2,2,doc; cwd; totholz; don; logs; release; net; freisetzung; tree species; runoff; tree; soils
+DNA,DNA,2,genome; database; sequence; draft genome sequence; draft genome; draft; genome sequence; fungus; dsm; konnten; vergleiche; genom
+CARBON FOOTPRINT,CARBON FOOTPRINT,2,co2; emission; rates; deadwood; totholz; schr; tree species; carbon; gut; positively; tree; carbon cycle
+OCEAN COASTAL UPWELLING INDEX,OCEAN COASTAL UPWELLING INDEX,2,crown; error; trait; schätzung; phase; plot; sample; shape; space; multivariate; combinations; messung
+RED ALGAE,RED ALGAE,2,nov; trifolium repens; repens; gen; holz; gen nov; trifolium; enzyme; novel; gattung; sequences; neue
+RANGELAND,RANGELAND,2,different plots; abstract determined; host plant plantago; plant plantago lanceolata; plant plantago; alpha; shannon; host plant; host; plantago; plantago lanceolata; lanceolata
+SENSOR COUNTS,SENSOR COUNTS,2,dendrometer; raw; title dendrometer; actual; see; pilzen; plant community; plant communities; plant biomass; plant; placed; place
+POPULATION ABUNDANCE,POPULATION ABUNDANCE,2,primers; fauna; oribatida; community assembly; species level; genetic diversity; dependence; grassland eps; soil fauna; resilience; assembly; genetic
+SAV/SEA GRASS BED,SAV/SEA GRASS BED,2,seed addition; sade; disturbance; seed; seed addition disturbance; vegetation records grassland; cover species; addition disturbance; addition disturbance experiment; addition; records grassland; disturbance experiment
+FIJI INDEX,FIJI INDEX,2,structural; harvesting; vielfalt; index; waldtypen; strukturelle; diversity; forests; taxonomic groups; wäldern; types; developed
+RIPARIAN WETLANDS,RIPARIAN WETLANDS,2,vorkommende; ectomycorrhiza; forest vip; species forest; vip; wald; schorfheide abstract; hainich abstract; schorfheide; hainich; species; forest
+RNA SEQUENCING,RNA SEQUENCING,2,reaction; yeasts; diversity abundance; red; nevertheless; mentioned; fodder; abundance community; abstract assessment; crop; advantages; cutting
+INDICATOR SPECIES,INDICATOR SPECIES,2,indicator; indikatoren; indicators; arthropods; beech forests; buchenwälder; species; dead wood; standorten; arthropoden; dead; saproxylic
+INFORMATION MANAGEMENT SERVICES,INFORMATION MANAGEMENT SERVICES,2,funktionen; entwickelt; anwendung; genutzt; daten; welches; ressourcen; verwaltung; regel; reduzieren; modell; machen
+MICROBIOME,MICROBIOME,2,bark; gemeinschaften; microbial communities; microbial; mikrobielle; communities; tree; beetle; wood; mikrobiellen gemeinschaften; fungi; taxa
+LAND/OCEAN/ICE MASK,LAND/OCEAN/ICE MASK,2,coordinates; abstract file; grid; original; stored; points; measurements; file; title soil; schorfheide; taken; including
+LIDAR,LIDAR,2,lidar; horizontal; single tree; canopy cover; laser scanning; laser; airborne; scanning; metrics; heterogeneity; canopy; derived
+HEXAPODS,HEXAPODS,2,arthropod; arthropod species; effort; flight; body size; body; time series; series; fox; monitoring; set; dispersal ability
+HIGH THROUGHPUT SEQUENCING,HIGH THROUGHPUT SEQUENCING,2,crown; inhabiting; htls; conservation; laser; wood; trees; upper; strategy; terrestrial laser scanning; terrestrial laser; laser scanning
+PH,PH,2,vip plots abstract; vip plots; value; vip; title soil; plots abstract; soil solution; solution; mixed; measure; soil; sample
+GAZETTEER SERVICE,GAZETTEER SERVICE,2,access; coordinates; files; points; schorfheide abstract; verjüngung; schorfheide; plot; projects; jahr; location; indicator
+MICRONUTRIENTS/TRACE ELEMENTS,MICRONUTRIENTS/TRACE ELEMENTS,2,nutrients; trifolium; magnesium; taraxacum; escape abstract; chemistry; infer; escape; trifolium repens; resin; bags; calcium
+PHOSPHOROUS,PHOSPHOROUS,2,phosphate; bscs; phosphor; release; kinetics; leicht; boden; soils; menge; crusts; waldböden; biogeochemical
+MOLECULAR NITROGEN,MOLECULAR NITROGEN,2,nitrogen; deadwood; nitrogen fixation; fixation; deposition; decomposition; nitrogen deposition; biological; laboratory; logs; process; tree species
+AGRICULTURAL LANDS,AGRICULTURAL LANDS,2,crop; agricultural; baden-württemberg; brandenburg; state; area; states; thüringer; institute; kind; august title; statistics
+MAGNETIC ANOMALIES,MAGNETIC ANOMALIES,2,amf; abstract screening; molekulare; screening; veränderung; analysen; soil title; diversität; plots abstract; hainich; grasslands; diversity
+VECTOR SPECIES,VECTOR SPECIES,2,ticks; vectors; birds; insect; density; factors climate; managed forests; vector; preliminary; various; weather conditions; factors
+TROPICAL RAINFOREST,TROPICAL RAINFOREST,2,trophic; information; forest eps; species information; landscape level; diversity forest; richness abundance; outside; diversity; observational; connected; single species
+ALLIGATORS/CROCODILES,ALLIGATORS/CROCODILES,1,snail; traits; life-history; preference; plots regions; species collected; categorical; drought resistance; humidity; alb hainich schorfheide; collected grassland; hainich schorfheide
+ANGSTROM EXPONENT,ANGSTROM EXPONENT,1,land-use; spectra; spectral; land-use intensity; leaf; transform; cellulose; infrared; chemical composition; biochemical; millefolium; forb
+VECTOR SOURCE,VECTOR SOURCE,1,locations; comprising; date; source; vips; research; experimental plots; central; information; experimental; plots; management
+TROPOSPHERIC/HIGH-LEVEL CLOUDS (OBSERVED/ANALYZED),TROPOSPHERIC/HIGH-LEVEL CLOUDS (OBSERVED/ANALYZED),1,point; positions; point clouds; clouds; scanner; gaps; fox; laser scanner; htls; scanned; add; fox plots
+TROPICAL NORTH ATLANTIC INDEX,TROPICAL NORTH ATLANTIC INDEX,1,trophic; isotopes; niche; trophic level; diversity however; ants; well understood; species may; higher trophic; functional group; values; enrichment
+TRANS-NINO INDEX,TRANS-NINO INDEX,1,time series; series; time; images; covering; forest eps abstract; schorfheide-chorin hainich-dün; forest eps; hainich-dün; eps abstract; schorfheide-chorin; eps
+TOXIN CONCENTRATION,TOXIN CONCENTRATION,1,alkaloids; epichloë; able; uncinata; june-august abstract symbiotic; festuca pratensis; june-august abstract; able produce different; toxic vertebrates invertebrates; symbiotic epichloë endophytes; monitor infections; june-august
+VISIBLE IMAGERY,VISIBLE IMAGERY,1,crown projection; projection; crown; title dendrometer; dendrometer; distance; pilz; plant; placed; place; plants title; plants grassland
+VELOCITY AZIMUTH DISPLAY VERTICAL WIND PROFILES,VELOCITY AZIMUTH DISPLAY VERTICAL WIND PROFILES,1,vehicles; unmanned aerial vehicles; aerial vehicles; unmanned; unmanned aerial; aerial; images; can used; spatial; field work; regions abstract; training
+BIOCHEMICAL OXYGEN DEMAND (BOD),BIOCHEMICAL OXYGEN DEMAND (BOD),1,bodens; wassergehalt; potentielle; genommen; grünland wald; grünland; abhängigkeit; beispiel; proben; landnutzungsintensität; wald; eigenschaft
+BIOAVAILABILITY,BIOAVAILABILITY,1,flower; availability; different habitats; across grassland; title flower; visiting; determining; communities different; analyzing; networks; hainich abstract; units
+BIDIRECTIONAL REFLECTANCE DISTRIBUTION FUNCTION,BIDIRECTIONAL REFLECTANCE DISTRIBUTION FUNCTION,1,hyperspectral; spectral; reflectance; infrared; remote; in-situ; index; optical; near; red; measurements; remote sensing
+MARINE MAMMALS,MARINE MAMMALS,1,organismen; new species; strain; beschrieben; phylogenetic; anhand; bisher; genus; diversität; presence; characteristic; extrem
+MAGNESIUM,MAGNESIUM,1,iron; sampling compaign; compaign may; sampling compaign may; coordinated sampling compaign; compaign; title soil sampling; taken coordinated; taken coordinated sampling; samples taken coordinated; coordinated sampling; sampling campaign experimental
+NITRATE,NITRATE,1,hainich-dün schorfheide; hainich-dün schorfheide chorin; ammonium nitrate; beech pine; schorfheide chorin; chorin; ammonium; uptake; pine; nitrate; roots; trees
+NIGHTTIME LIGHTS,NIGHTTIME LIGHTS,1,weather conditions; flight; now; weather; acquired; please; aerial; full; exploratories abstract; airborne; obtained; hai
+MUSEUM EXHIBITS,MUSEUM EXHIBITS,1,basic; coordinates; public; functional biodiversity research; large-scale long-term; functional biodiversity; project abstract; biodiversity research; called; biodiversity exploratories project; exploratories; biodiversity
+MOLECULAR OXYGEN,MOLECULAR OXYGEN,1,co2; conditions; incubations; mineral-associated; mineralization; minerals; organic; incubation; laboratory; carbon; organic carbon; organic matter
+METHYL CYANIDE,METHYL CYANIDE,1,carrion; synthetic; beetle; anoplotrupes; german forests; cadaver; mixtures; title abundance; uses; abstract investigated; forest plots abstract; dung
+METHANOL,METHANOL,1,methylotrophs; genotypes; soils; böden; atmosphäre; diversität; bislang; aktivität; concentrations; pflanzen; similar; overlooked
+METAMORPHIC ROCK AGE DETERMINATIONS,METAMORPHIC ROCK AGE DETERMINATIONS,1,title tree; age; vergleich; determination; verschiedener; tree; pilze; plant communities; plant biomass; plant; placed; place
+METAGENOME,METAGENOME,1,spatially explicit; explicit; interesting; metadata; package; spatially; questions; heterogeneity; ecological; change; environmental; can
+MODEL LOGS,MODEL LOGS,1,belongdead; photos; log; title belongdead; every; logs; alb abstract; alb; phytometers; plants grassland; plants can; plants abstract
+MINERAL DISSOLUTION,MINERAL DISSOLUTION,1,maom; goethite; illite; stability; formed; organic; organic carbon; mineral-associated; microbial; carbon; decomposition; mineral
+PHOSPHATE,PHOSPHATE,1,phosphate; release; kinetics; soils; reactive; pool; pools; grassland soils; forms; characterized; grassland forest; concentrations
+PESTICIDES,PESTICIDES,1,grassland forest; substances; plots three german; experimental plots abstract; experimental plots; experimental plots three; biomass; agriculture; german regions schwäbische; get; forest experimental; forest experimental plots
+PEANUT WORMS,PEANUT WORMS,1,root; verhalten; class; classes; feeding; behavior; agriotes; fressen; verschiedener; mass; vorhanden; werte
+PATHOGEN,PATHOGEN,1,less; yeasts; peroxidase; can found; review; nearly; filamentous; organic compounds; protists; oxygen; mechanistic; whose
+PASTURE,PASTURE,1,activity; common; predators; extensively managed; grasslands; land-use; prey; extensively; managed; intensity grassland; predator; managed grassland
+PARTICLE SIZE DISTRIBUTION,PARTICLE SIZE DISTRIBUTION,1,tree diameter; diameter; forest eps; distribution; abstract tree; title tree; tree; classes; forest eps abstract; eps; eps abstract; forest
+HYDROLOGICAL HAZARDS MAPPING,HYDROLOGICAL HAZARDS MAPPING,1,district; protected; mapping; carried; around; areas; alb abstract; region; alb; phytometer; plants can; plants abstract
+HOGS/PIGS,HOGS/PIGS,1,size; abundance; beetles coleoptera; cadavers; piglet; cadaver; visiting; body size; fieldwork; body; coleoptera; measurement
+MACROALGAE (SEAWEEDS),MACROALGAE (SEAWEEDS),1,sequences; lineages; lineage; formed; green; new; distinct; described; two; distribution; extended; green algal
+LOESS,LOESS,1,ants; european beech; beech forest; beech; gastropods; european; seed; abundance; can found; dispersers; slugs; seed dispersal
+LARVACEANS,LARVACEANS,1,sequencing; endophytic; miseq; comparison; clear; rather; root; implications; absent; fungi; rare species; poor
+LANDSCAPE MANAGEMENT,LANDSCAPE MANAGEMENT,1,protection; brandenburg; areas; landscape; file state environmental; environmental office; environmental office brandenburg; state environmental office; file state; office brandenburg; office; state environmental
+GEOLINKED DATA ACCESS SERVICE,GEOLINKED DATA ACCESS SERVICE,1,remote sensing; sensing; remote; orientation; eps may; georeferenced; serves; geographically; transfer; error; linking; usually
+GEOGRAPHIC DATA MANAGEMENT SERVICES,GEOGRAPHIC DATA MANAGEMENT SERVICES,1,subset; input; land; yearly; plots three exploratories; land use grasslands; use grasslands; management; title grassland; abstract used; computer; grazed
+GEOENGINEERING,GEOENGINEERING,1,beobachtungen; observations; linear; mixed; designed; zwei; methoden; seite; beispiele; korrelationen; linearen; examples
+GAZETTEER APPLICATION SERVICES,GAZETTEER APPLICATION SERVICES,1,dendrometer; relation; base; title dendrometer; number; pilze; plant communities; plant biomass; plant; placed; place; plants title
+ISOTOPIC AGE,ISOTOPIC AGE,1,configuration; messung; zeitraum; estimating; jahre; title dendrometer; dendrometer; change; picea; plants title; plants grassland; plants can
+INCREASED/DECREASED CLOUD FRACTION,INCREASED/DECREASED CLOUD FRACTION,1,rock; volume; soil organic carbon; bestimmung; literature; soil organic; density; stock; organic carbon; fragments; bulk density; calculation
+IMAGE PROCESSING,IMAGE PROCESSING,1,online; locations; code; individually; machine; reflect; note; restricted; researchers; please; generation; comprising
+ICE CORE RECORDS,ICE CORE RECORDS,1,list; names; arthropods; species; scientific; name; core; traps; morphologically; identities; species identities; species collected
+PALMER HYDROLOGICAL DROUGHT INDEX,PALMER HYDROLOGICAL DROUGHT INDEX,1,drought; temperate grassland species; drought resistance; temperate grassland; grassland species; resistance; point; loss; understanding mechanisms; differential; promotes; herbaceous
+RADIOCARBON,RADIOCARBON,1,radiocarbon; fine roots; fine; roots; sampling compaign may; sampling compaign; coordinated sampling compaign; compaign; compaign may; sampling campaign forest; samples taken coordinated; taken coordinated
+PRESENT WEATHER,PRESENT WEATHER,1,monthly; meteorological; air temperature; mean values; internal; duration; access; air; sets; open; precipitation; temperature
+POTENTIAL EVAPOTRANSPIRATION,POTENTIAL EVAPOTRANSPIRATION,1,water; flux; fluxes; simplified; comprise; downward; evapotranspiration; balance; grassland eps; grassland vips; actual; layer
+FIRST LEAF DATE,FIRST LEAF DATE,1,leaf litter; parameters; litter; leaf; title leaf; every; exploratory; spring; measured; plots; physiology; plants abstract
+HAPTOPHYTES,HAPTOPHYTES,1,nov; strains; novel; strain; nov type; nov type strain; lmg; gen nov; closest; c16; sequence similarity; gen
+GROWTH STAGE,GROWTH STAGE,1,beech; attack; buchenwäldern; scale; bäume; bark; beech forest; european beech; long-term; august; insgesamt; rolle
+GROWING DEGREE DAYS,GROWING DEGREE DAYS,1,dung; rates; process rates; whether; process; seed; experiments; vegetation height; processes dung; medium-term; climate land use; climate land
+GROUNDING LINE,GROUNDING LINE,1,crown; lidar; ground; forest eps; field; hainich; eps; three; forest; physiology; plants abstract; plants
+GREBES,GREBES,1,trap; traps; small mammals; mammals; diameter; spider; larger; small; coleoptera; size; caught; spiders
+GLACIER TOPOGRAPHY/ICE SHEET TOPOGRAPHY,GLACIER TOPOGRAPHY/ICE SHEET TOPOGRAPHY,1,slope; forest grassland eps; aspect; topographic; exploratories regions; elevation; contain; attributes; bexis; specifically; regarding; resolution
+POINT BAR,POINT BAR,1,waldinventur; title forest inventory; features; title forest; forest inventory; inventory; forest; pilz; plant; placed; place; plants title
+PILEUS,PILEUS,1,flowers; open; patch; footprints; bumblebee; patches; sample; assess; collected; average; local; mesh
+SANDPIPERS,SANDPIPERS,1,spider; traps; grassland eps abstract; grassland eps; eps abstract; eps; grassland; piglet; placed; place; plants title; plants grassland
+ROTIFERS,ROTIFERS,1,ticks; sampling conducted; district; incidence; schwäbische alb abstract; contact; possibly; decaying; reported; first time; occurred; baden-württemberg
+ROOT ZONE SOIL MOISTURE,ROOT ZONE SOIL MOISTURE,1,root; fine roots; collected; plot; diameter; fine; roots; resulting; depth; soil sampling; elemental; symbiosis
+RIPPLES,RIPPLES,1,decay; pinus; plant growth; plant functional; plant diversity; plant community; plant communities; plant biomass; plant; placed; place; plants title
+ENFORCEMENT,ENFORCEMENT,1,bird; state environmental office; file state environmental; environmental office; environmental office brandenburg; office; office brandenburg; file state; state environmental; title schorfheide; brandenburg; state
+ELEMENTAL CARBON,ELEMENTAL CARBON,1,fall; litter; top; vector; forest vips; title litter; forms; input; forest stands; element; layer; mineral soil
+ELECTRICAL PROPERTIES,ELECTRICAL PROPERTIES,1,error; connection; signal; kind; maintenance; code; title dendrometer; dendrometer; information; third; besides; measurement
+ELECTRICAL INTENSITY,ELECTRICAL INTENSITY,1,test; pinus sylvestris; plant life; plant growth; plant functional; plant diversity; plant community; plant communities; plant biomass; plant; placed; place
+EARTHWORMS,EARTHWORMS,1,forest eps; spring abstract; species forest; eps; spring; sampled; forest; community; species; picea abies; place; plants title
+EARTH SCIENCE SERVICES,EARTH SCIENCE SERVICES,1,main tree species; main tree; soil types; plots eps abstract; experimental plots; basic; coordinates; information; experimental; plots eps; experimental plots eps; see
+FREEZING DRIZZLE,FREEZING DRIZZLE,1,dom; title influence; liquid; optical; testing; dissolved organic; dissolved; influence; concentration; organic matter; matter; quality
+FORMAT CONVERSION SERVICES,FORMAT CONVERSION SERVICES,1,format; matrix; transform; title script; prefer; apply; just; usage; regular; script; table; file
+DESKTOP GEOGRAPHIC INFORMATION SYSTEMS,DESKTOP GEOGRAPHIC INFORMATION SYSTEMS,1,processing; database; ermöglicht; sensors; aggregation; scientists; daten; access; flow; anwendung; enables; easy
+DESERT SCRUB,DESERT SCRUB,1,sch alb; abstract waldinventur; rund; zersetzung; waldinventur; title forest inventory; title forest; forest inventory; sch; alb abstract; inventory; tree
+DEPOSITION,DEPOSITION,1,crown projection; projection; crown; title dendrometer; dendrometer; pilze; plant communities; plant biomass; plant; placed; place; plants title
+DEGRADATION,DEGRADATION,1,decay; pinus; plant growth; plant functional; plant diversity; plant community; plant communities; plant biomass; plant; placed; place; plants title
+EVAPOTRANSPIRATION,EVAPOTRANSPIRATION,1,flux; water; two soil; use plant; downward; land use plant; soil layers; evapotranspiration; grassland vips abstract; agriculturally; managed grassland; abstract investigated
+ENVIRONMENTAL DNA (eDNA),ENVIRONMENTAL DNA (eDNA),1,soil bacterial; bacterial diversity; bacterial; diversity community composition; abstract file; diversity community; rrna gene; stored; forest soil; fine; rrna; diversity
+RESAMPLING,RESAMPLING,1,immer; aller; regeneration; schwäbischen; allen; inventory; pilz; plant; placed; place; plants title; plants grassland
+RECLAMATION/REVEGETATION/RESTORATION,RECLAMATION/REVEGETATION/RESTORATION,1,original; goals; script; values; site; selected; abstract script; title script; per; reached; calculation; allowing
+SOFT CORALS,SOFT CORALS,1,vier; ticks; sampling sites; baden-württemberg; report; association; four; sampling; material; first; erster; district
+SNOW GRAINS,SNOW GRAINS,1,resin; bags; nutrients; material; bag; mean values; caught; contact; incubated; filled; incubation; nitrate
+SIGMA NAUGHT,SIGMA NAUGHT,1,signal; connection; kind; error; maintenance; code; title dendrometer; dendrometer; information; third; besides; measurement
+SELF-SUPERVISED,SELF-SUPERVISED,1,neural network; neural; network; publicly available; publicly; recording; automatically; interested; enable; contains; obtain; behind
+CRYOSPHERIC INDICATORS,CRYOSPHERIC INDICATORS,1,understorey; precipitation; hydrological; address; drought; climate change; direct; forest; growth; functions; severely; title bedry
+CRYOSOLS,CRYOSOLS,1,crust; soil crust; stability; organic matter; matter; title crustfunction; compartments biological soil; gives; compartments biological; crust-free soil; mass spectrometry; determined
+COUNTRY BOUNDARIES,COUNTRY BOUNDARIES,1,national park; park; national; park hainich; national park hainich; hainich; picea abies; place; plants title; plants grassland; plants can; plants abstract
+CORAL REEF EXTENT,CORAL REEF EXTENT,1,gap experiment fox; gap experiment; forest gap experiment; forest gap; experiment fox; description; fox; gap; experiment; fox abstract; biodiversity exploratories regions; exploratories regions
+EAGLES/FALCONS/HAWKS AND ALLIES,EAGLES/FALCONS/HAWKS AND ALLIES,1,bird; birds; autumn; prunus; shrubs; number; assemblages; bird species; spring; individuals; probably; damage
+DOGS/FOXES/WOLVES,DOGS/FOXES/WOLVES,1,kot; höchste; waldflächen; artengemeinschaften; grünland; gebieten; gattung; dung; sowie; worden; unterscheiden; allen
+SEISMIC PROFILE,SEISMIC PROFILE,1,description; plots vip; biodiversity exploratories soil; exploratories soil; coordinated; grassland forest plots; soil; carried; subplot; survey; vip plots; plots biodiversity
+SEDIMENTARY STRUCTURES,SEDIMENTARY STRUCTURES,1,beech stands; genetic; stands; spatial; beech; structure; analysed; pilz; plant; placed; place; plants title
+SEDIMENTARY ROCK AGE DETERMINATIONS,SEDIMENTARY ROCK AGE DETERMINATIONS,1,ermittlung; entlang; bewirtschaftungsintensität; methoden; mittels; pilz; plant; placed; place; plants title; plants grassland; plants can
+SEDIMENT COMPOSITION,SEDIMENT COMPOSITION,1,bank; sade; seed; sade experiment; disturbed; mips; treatments; control; determined; experiment; composition; plots
+SEA URCHINS,SEA URCHINS,1,reserve; title schorfheide; biosphere; files; schorfheide; schorfheide-chorin; pilze; plant communities; plant biomass; plant; placed; place
+SEA ICE TOPOGRAPHY,SEA ICE TOPOGRAPHY,1,geworden; worden; pine forest; plant functional; plant diversity; plant community; plant communities; plant biomass; plant; placed; place; plants title
+SOIL WATER HOLDING CAPACITY,SOIL WATER HOLDING CAPACITY,1,capacity; generation; agriculturally; deeper; matrix; varying; biodiversity; soils; affects; given; exploratory; schwäbische
+SOIL POROSITY,SOIL POROSITY,1,weight; earth; fine; stones; vip plots abstract; small scale; vip plots; variability; roots; vip; scale; title soil
+SOIL PH,SOIL PH,1,grid plots; grid; title soil; plots abstract; soil; plots; pilze; plant communities; plant biomass; plant; placed; place
+CHLOROPHYLL,CHLOROPHYLL,1,weight; leaf; methylotrophs; gramm; facultative; selected plots; plots exploratories; per; fresh; list; alb hainich-dün schorfheide-chorin; hainich-dün schorfheide-chorin
+CETACEANS,CETACEANS,1,flechten; deutschlands; taxa; ausnahme; vorkommenden; umfasst; bezug; denen; damit; may; physiology; plants abstract
+DATA NETWORKING/DATA TRANSFER TOOLS,DATA NETWORKING/DATA TRANSFER TOOLS,1,matrix; format; script; long; table; wide; file; back; usage; benefits; otu; header
+CYCADS,CYCADS,1,draft genome; draft; ubiquitous; genome; gene; groß; genom; saprotrophic; pilz; isoliert; verbreiteten; vorhergesagt
+CUMULUS CONGESTUS,CUMULUS CONGESTUS,1,nov; strain; ω7c; novel; isolated; isolated grassland; isolated grassland soil; gen nov; c18; gen; grassland soil; cells
+SOIL INFILTRATION,SOIL INFILTRATION,1,abstract screening; screening; fungal; fungi; soil; pilze; plant communities; plant biomass; plant; placed; place; plants title
+SOIL IMPEDANCE,SOIL IMPEDANCE,1,title beech; title beech exclusion; beech exclusion; inventory abstract; exclusion; inventory; beech; soil; picea abies; place; plants title; plants grassland
+SOIL DEPTH,SOIL DEPTH,1,title beech; title beech exclusion; beech exclusion; exclusion; soil abstract; bodens; beech; soil; piglet; placed; place; plants title
+SOIL BULK DENSITY,SOIL BULK DENSITY,1,physical; soil; density; across grassland; parent material; eps biodiversity exploratories; parent; plots eps biodiversity; eps biodiversity; content soil; carbon content; soil texture
+SULFUR DIOXIDE PROFILES,SULFUR DIOXIDE PROFILES,1,samples vip; samples vip plots; vip plots abstract; title minsoil; minsoil; iron; vip plots; forest soil; mixed; soil samples; vip; plots abstract
+SULFUR,SULFUR,1,sulfur; fractions; intensity across; forest vip plots; collected may; forest vips; forest vip; soil cores; extractable; cores; across plots biodiversity; biodiversity exploratories contains
+SULFATE,SULFATE,1,smi; contents; signifikant; inorganic; anthropogenic; einflüsse; schorfheide-chorin; soil; increasing; anthropogenen; silvicultural management; anthropogene
+SUBSCRIPTION SERVICES,SUBSCRIPTION SERVICES,1,waldinventur; signature; sch alb; abstract waldinventur; rund; title forest inventory; title forest; forest inventory; sch; alb abstract; inventory; alb
+STRATOCUMULUS MAMMATUS,STRATOCUMULUS MAMMATUS,1,brandenburg; flora; taraxacum; ranunculus; achillea; taxa; contribution; trifolium; veränderungen; first; beiträge; entdeckt
+BIOTURBATION,BIOTURBATION,1,spring abstract; earthworms; chemistry; forest eps; spring; biomass; important; eps; soil; forest; physiology; plants abstract
+BIOLOGICAL RECORDS,BIOLOGICAL RECORDS,1,bats; alb hai sch; abstract assessment; free; alb hai; hai sch; ranging; recorded; assessment; hai; sch; activity
+BIOINFORMATICS,BIOINFORMATICS,1,processing; feature; easy; required; releases; coding; aggregation; will; flexible; practice; future; sets
+CODS/HADDOCKS,CODS/HADDOCKS,1,verschiedenen; allem; welchen einfluss; familie; welchen; konnten; gattung; studie; dung; einfluss; insgesamt; grünland
+CLOUD INDICATORS,CLOUD INDICATORS,1,dendrometer; table abstract; status; title dendrometer; table; pine; plant diversity; plant community; plant communities; plant biomass; plant; placed
+CLIMATE WARMING,CLIMATE WARMING,1,across species; survival; rate; moths; days; varied; across; summer; decreased; treatments; temperature; average
+TERRAIN ELEVATION,TERRAIN ELEVATION,1,distances; calculated; plots three exploratories; experimental plots three; coordinates; three exploratories; plots three; year; plots; available; experimental plots; experimental
+SWAMPS,SWAMPS,1,sampling dates; dates; arthropod; sampling; contains information; abstract contains; grassland eps abstract; contains; grassland eps; eps abstract; information; grasslands
+CARBON CYCLE/CARBON BUDGET MODELS,CARBON CYCLE/CARBON BUDGET MODELS,1,date; list; sample; collection; plot; pilze; plant communities; plant biomass; plant; placed; place; plants title
+CALIBRATION,CALIBRATION,1,calibration; title dendrometer; dendrometer; daten; pilze; plant communities; plant biomass; plant; placed; place; plants title; plants grassland
+BOUNDARY SURVEYS,BOUNDARY SURVEYS,1,three exploratory; three exploratory regions; three regions biodiversity; exploratory regions; regions biodiversity; regions biodiversity exploratories; format; project abstract; biodiversity exploratories project; exploratories project; actual; regions schwäbische
+BOTTOM COVER TYPE,BOTTOM COVER TYPE,1,title beech; title beech exclusion; beech exclusion; exclusion; cover; beech; soil; pilz; plant; placed; place; plants title
+SPECIES DOMINANCE INDICES,SPECIES DOMINANCE INDICES,1,beech pine; profiles; pine; abundance; pine forest; bacterial community composition; relative abundance; dominate; beech; abstract aim; bacterial community; dominated
+SOLID EARTH,SOLID EARTH,1,weight; earth; fine; stones; small scale; variability; roots; scale; title soil; small; soil; piglet
+WEB-BASED GEOGRAPHIC INFORMATION SYSTEMS,WEB-BASED GEOGRAPHIC INFORMATION SYSTEMS,1,system; exploratorium; geographical; geographic; information; abstract forest; alb abstract; alb; available; area; schwäbische; schwäbische alb
+WEB SERVICES,WEB SERVICES,1,service; tools; statistical; functionality; integration; system; statistics; configuration; adding; web; information; systems
+WATER RESOURCES,WATER RESOURCES,1,reserves; nature; brandenburg; environmental office brandenburg; file state environmental; environmental office; state environmental office; office; file state; office brandenburg; state environmental; title schorfheide
+WATER IMPOUNDMENT,WATER IMPOUNDMENT,1,brandenburg; state; water; state environmental office; environmental office; environmental office brandenburg; file state environmental; office; file state; office brandenburg; protection; state environmental
+VLBI (VERY LONG BASELINE INTERFEROMETRY),VLBI (VERY LONG BASELINE INTERFEROMETRY),1,imagery; auflösung; mapping; tree species; high-resolution; räumliche; tree; ermöglicht; baumarten; convolutional neural; learning; convolutional
+AGGREGATION,AGGREGATION,1,scalemic; points; abundances abstract; top soil; grassland plot; time points; plot; assemblage; replicates; dates; title fungal; otu
+AEROALLERGENS,AEROALLERGENS,1,vectors; captured; get; birds; different forest; insect; overview; numbers; potential; different; forest; physikalischen
+ATMOSPHERIC CIRCULATION RECONSTRUCTION,ATMOSPHERIC CIRCULATION RECONSTRUCTION,1,regeneration; inventory; title forest inventory; title forest; forest inventory; forest; pilzarten; plant biomass; plant; placed; place; plants title
+ATMOSPHERIC CARBON MONOXIDE,ATMOSPHERIC CARBON MONOXIDE,1,horizons; turnover; radiocarbon; pool; fractions; contained; carbon; kohlenstoff; oberboden; kohlenstoffs; median; lag
+ACTIVE LAYER,ACTIVE LAYER,1,rhizosphere; taraxacum; randomly; trifolium repens; extracellular; repens; land-use intensity gradient; plant species; intensity gradient; hainich; along land-use intensity; glomerata
+24 HOUR PRECIPITATION AMOUNT,24 HOUR PRECIPITATION AMOUNT,1,abstract climate; automatically; climate; stations; weather; service; resolution; temporal; german; measured; phytometers; plants grassland
+Weather Forecast,Weather Forecast,1,meteorological; air; downward; several grassland; air temperature; uav; wind; humidity; evapotranspiration; calculation; pressure; acquired

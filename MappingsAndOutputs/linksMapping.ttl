@@ -1,0 +1,221 @@
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix ex: <http://example.com/base/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix envo: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix ro: <https://www.ebi.ac.uk/ols4/ontologies/ro> .
+@prefix envthes: <https://vocabs.lter-europe.net/EnvThes/> .
+@prefix iao: <http://purl.obolibrary.org/obo/iao.owl> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pco: <http://purl.obolibrary.org/obo/PCO_> .
+@prefix ncbi: <https://www.ncbi.nlm.nih.gov/> .
+@prefix agro: <http://purl.obolibrary.org/obo/agro.owl> .
+@prefix schema: <http://schema.org/> .
+@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/#> .
+@prefix vivo: <http://vivoweb.org/ontology/core> .
+@prefix efo: <http://www.ebi.ac.uk/efo/efo.owl> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat> .
+@prefix metpo: <https://w3id.org/metpo/metpo.owl> .
+@prefix inrae: <http://opendata.inrae.fr/thesaurusINRAE/thesaurusINRAE> .
+@prefix cito: <http://purl.org/spar/cito> .
+@prefix opmi: <http://purl.obolibrary.org/obo/opmi.owl> .
+@prefix stato: <http://purl.obolibrary.org/obo/stato.owl> .
+@prefix omo: <http://purl.obolibrary.org/obo/omo.owl> .
+@prefix addicto: <http://addictovocab.org/addicto.owl> .
+@prefix semunit: <http://example.com/base/semanticunits/> .
+
+
+<#Links_to>
+  a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "be_links" ] ;
+
+  rr:subjectMap [
+    rr:template "http://example.com/base/{links_source_types}_{links_source_ids}" ;
+    rr:termType rr:IRI
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate ex:linksTo ;
+    rr:objectMap [
+      rr:template "http://example.com/base/{links_target_types}_{links_target_ids}" ;
+      rr:termType rr:IRI
+    ] ;
+    
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_target_types}_{links_target_ids}" ] ;
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:template "http://example.com/prop/{links_reference_types}"
+    ] ;
+    rr:objectMap [
+      rr:template "http://example.com/base/{links_target_types}_{links_target_ids}" ;
+      rr:termType rr:IRI
+    ] ;
+    
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_target_types}_{links_target_ids}" ] ;
+  ] .
+
+<#Links_from>
+  a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "be_links" ] ;
+
+  rr:subjectMap [
+    rr:template "http://example.com/base/{links_target_types}_{links_target_ids}" ;
+    rr:termType rr:IRI
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate ex:linksFrom ;
+    rr:objectMap [
+      rr:template "http://example.com/base/{links_source_types}_{links_source_ids}" ;
+      rr:termType rr:IRI
+    ] ;
+    
+    rr:graphMap  [
+            rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_source_types}_{links_source_ids}" ;
+        ] ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_target_types}_{links_target_ids}" ] ;    
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:template "http://example.com/prop/{links_reference_types}"
+    ] ;
+
+    rr:objectMap [
+      rr:template "http://example.com/base/{links_source_types}_{links_source_ids}" ;
+      rr:termType rr:IRI
+    ] ;
+
+    rr:graphMap  [
+            rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_source_types}_{links_source_ids}" ;
+        ] ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_target_types}_{links_target_ids}" ] ;
+  ] .
+
+################################################################################
+# ONE STATEMENT UNIT PER EDGE
+# SU IRI encodes (source, predicate-name, target).
+# Triples are written into:
+#   - the SU’s own named graph
+#   - the source’s compound graph
+#   - the target’s compound graph
+################################################################################
+<#LinkStatementUnit>
+  a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "be_links" ] ;
+
+  # SU subject: http://example.com/base/semunit/link/<srcType>_<srcId>__<predName>__<tgtType>_<tgtId>
+  rr:subjectMap [
+    rr:template "http://example.com/base/semunit/link/{links_source_types}_{links_source_ids}__{links_reference_types}__{links_target_types}_{links_target_ids}" ;
+    # SU graph
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/link/{links_source_types}_{links_source_ids}__{links_reference_types}__{links_target_types}_{links_target_ids}" ] ;
+    # Also place the SU triples into BOTH endpoints' compound graphs
+    #rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_source_types}_{links_source_ids}" ] ;
+    #rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{links_target_types}_{links_target_ids}" ] ;
+  ] ;
+
+  # Typing
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [ rr:constant semunit:assertionalStatementUnit ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [ rr:constant semunit:linkStatementUnit ]
+  ] ;
+
+  # What this SU is "about"
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap [
+      rr:template "http://example.com/base/{links_source_types}_{links_source_ids}" ;
+      rr:termType rr:IRI
+    ]
+  ] .
+
+
+################################################################################
+# COMPOUND UNIT PER NODE (Publication, Dataset, etc.)
+# Collects ALL incident link SUs, regardless of direction.
+################################################################################
+<#LinksCompoundUnit>
+  a rr:TriplesMap ;
+  rr:logicalTable [
+    rr:sqlQuery """
+      /* Build one row per (node, su_iri) pair, from BOTH directions */
+      SELECT DISTINCT
+        l.links_source_types AS node_type,
+        l.links_source_ids   AS node_id,
+        'http://example.com/base/semunit/link/'
+          || l.links_source_types || '_' || l.links_source_ids || '__'
+          || l.links_reference_types || '__'
+          || l.links_target_types || '_' || l.links_target_ids AS su_iri
+      FROM be_links l
+
+      UNION ALL
+
+      SELECT DISTINCT
+        l.links_target_types AS node_type,
+        l.links_target_ids   AS node_id,
+        'http://example.com/base/semunit/link/'
+          || l.links_source_types || '_' || l.links_source_ids || '__'
+          || l.links_reference_types || '__'
+          || l.links_target_types || '_' || l.links_target_ids AS su_iri
+      FROM be_links l
+    """
+  ] ;
+
+  # One compound per node (same IRI reused across many rows -> aggregation)
+  rr:subjectMap [
+    rr:template "http://example.com/base/semunit/linksCompoundUnit/{node_type}_{node_id}" ;
+    rr:graphMap  [ rr:template "http://example.com/base/semunit/linksCompoundUnit/{node_type}_{node_id}" ]
+  ] ;
+
+  # Typing
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [ rr:constant semunit:linksCompoundUnit ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [ rr:constant semunit:compoundUnit ]
+  ] ;
+
+  # This compound is about the node itself
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap [
+      rr:template "http://example.com/base/{node_type}_{node_id}" ;
+      rr:termType rr:IRI
+    ]
+  ] ;
+
+  # Membership: collect ALL statement units that touch this node
+  rr:predicateObjectMap [
+    rr:predicate semunit:hasAssociatedSemanticUnit ;
+    rr:objectMap [
+      rr:column "su_iri" ;
+      rr:termType rr:IRI
+    ]
+  ] .

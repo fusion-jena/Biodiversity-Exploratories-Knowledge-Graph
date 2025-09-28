@@ -1,0 +1,3793 @@
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix ex: <http://example.com/base/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix envo: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix ro: <https://www.ebi.ac.uk/ols4/ontologies/ro> .
+@prefix envthes: <https://vocabs.lter-europe.net/EnvThes/> .
+@prefix iao: <http://purl.obolibrary.org/obo/iao.owl> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pco: <http://purl.obolibrary.org/obo/PCO_> .
+@prefix ncbi: <https://www.ncbi.nlm.nih.gov/> .
+@prefix agro: <http://purl.obolibrary.org/obo/agro.owl> .
+@prefix schema: <http://schema.org/> .
+@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/#> .
+@prefix vivo: <http://vivoweb.org/ontology/core> .
+@prefix efo: <http://www.ebi.ac.uk/efo/efo.owl> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat> .
+@prefix metpo: <https://w3id.org/metpo/metpo.owl> .
+@prefix inrae: <http://opendata.inrae.fr/thesaurusINRAE/thesaurusINRAE> .
+@prefix cito: <http://purl.org/spar/cito> .
+@prefix opmi: <http://purl.obolibrary.org/obo/opmi.owl> .
+@prefix stato: <http://purl.obolibrary.org/obo/stato.owl> .
+@prefix omo: <http://purl.obolibrary.org/obo/omo.owl> .
+@prefix addicto: <http://addictovocab.org/addicto.owl> .
+@prefix semunit: <http://example.com/base/semanticunits/> .
+
+
+<#NamedIndividualIdentificationUnit_Dataset>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Dataset_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Dataset_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Dataset_id> ] ;
+  ] .
+
+<#Dataset_id>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Dataset_{id}" ;
+        rr:class iao:dataset ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "iao:dataset" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Dataset_{id}"
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Dataset {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Dataset_{id}"
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcterms:title ;  
+    rr:objectMap [
+      rr:column "title" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcterms:abstract ;  
+    rr:objectMap [
+      rr:column "abstract" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate schema:keywords ;  
+    rr:objectMap [
+      rr:column "keywords" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcterms:format ;  
+    rr:objectMap [
+      rr:column "contenttype" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate omo:acronym ;  
+    rr:objectMap [
+      rr:template "acronym: {acronym}; meaning: {meaning}" ;
+      rr:termType rr:Literal ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcterms:identifier ;  
+    rr:objectMap [
+      rr:column   "doi" ;
+      ] ;
+    rr:objectMap [
+      rr:column   "identifier" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate schema:url ;  
+    rr:objectMap [
+      rr:column   "url" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcterms:conformsTo ;  
+    rr:objectMap [
+      rr:column   "metadata_schema" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcterms:license ;  
+    rr:objectMap [
+      rr:column   "license" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcat:startDate ;  
+    rr:objectMap [
+      rr:column   "start_date" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcat:endDate ;  
+    rr:objectMap [
+      rr:column   "end_date" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:isSpecifiedOutputOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Project/{project_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+      #rr:graphMap  [
+      #      rr:template "http://example.com/base/semunit/specifiedOutputOfStatementUnit/Dataset_{id}"  ;
+      #  ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcterms:contributor ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/MetadataCreator/{metadata_creator_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    rr:objectMap [
+      rr:template "http://example.com/base/ProjectLeader/{project_leader_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+      rr:objectMap [
+      rr:template "http://example.com/base/ContactPerson/{contact_person_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    rr:objectMap [
+      rr:template "http://example.com/base/DataCreator/{data_creator_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+      rr:objectMap [
+      rr:template "http://example.com/base/DataCollector/{data_collector_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate schema:funder ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Funder/{funder_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate iao:isAbout ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/BioticDataType/{bioticdatatypeclass}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate iao:obi:isSpecifiedOutput ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/DataPreparation_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate iao:obi:hasSpecifiedOutput ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/DataAnalysis_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ex:dataCitation ;
+        rr:objectMap [
+            rr:column "datareferences" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:comment ;
+        rr:objectMap [
+            rr:column "importantnotes" ;
+            rr:language "en" ;
+        ] ;
+        rr:objectMap [
+            rr:column "additional_information" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate opmi:hasStatusContent ;
+        rr:objectMap [
+            rr:column "dataprocessingstatus" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate schema:citation ;
+        rr:objectMap [
+            rr:column "literaturereferences" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ex:dataUploadStatus ;  
+    rr:objectMap [
+      rr:column   "datauploadstatus" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcat:inCatalog ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Repository/{name_of_repository_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:isSpecifiedOutputOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Project/Core/{projects_core_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Catalog>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Repository/{name_of_repository_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Repository/{name_of_repository_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Catalog> ] ;
+  ] .
+
+<#Catalog>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Repository/{name_of_repository_hash}" ;
+        rr:class dcat:catalog ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "dcat:catalog" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Repository/{name_of_repository_hash}"
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "name_of_repository" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Repository/{name_of_repository_hash}"
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Funder>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Funder/{funder_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Funder/{funder_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Funder> ] ;
+  ] .
+
+<#Funder>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Funder/{funder_hash}" ;
+        rr:class foaf:organization ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "foaf:organization" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Funder/{funder_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "funder" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Funder/{funder_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:identifier ;
+        rr:objectMap [
+            rr:column "funder_identifier" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_FunderRole>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Role/Funder" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/Funder" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#FunderRole> ] ;
+  ] .
+
+<#FunderRole>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Role/Funder" ;
+        rr:class efo:funder ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "efo:funder" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/Funder" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:roleOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Funder/{funder_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:constant "Funder Role" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/Funder" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_MetadataCreator>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/MetadataCreator/{metadata_creator_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/MetadataCreator/{metadata_creator_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#MetadataCreator> ] ;
+  ] .
+
+<#MetadataCreator>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/MetadataCreator/{metadata_creator_hash}" ;
+        rr:class foaf:person ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "foaf:person" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/MetadataCreator/{metadata_creator_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:hasRole ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Role/MetadataCreator_Dataset_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "metadata_creator" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/MetadataCreator/{metadata_creator_hash}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_MetadataCreatorRole>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Role/MetadataCreator_Dataset_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/MetadataCreator_Dataset_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#MetadataCreatorRole> ] ;
+  ] .
+
+<#MetadataCreatorRole>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Role/MetadataCreator_Dataset_{id}" ;
+        rr:class ex:metadataCreatorRole ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:metadataCreatorRole" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/MetadataCreator_Dataset_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:roleOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/MetadatCreator/{metadata_creator_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:constant "Metadata Creator Role" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/MetadataCreator_Dataset_{id}" ;
+        ] ;
+    ] . 
+
+<#NamedIndividualIdentificationUnit_ProjectLeader>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/ProjectLeader/{project_leader_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ProjectLeader/{project_leader_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ProjectLeader> ] ;
+  ] .
+
+<#ProjectLeader>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/ProjectLeader/{project_leader_hash}" ;
+        rr:class foaf:person ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "foaf:person" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ProjectLeader/{project_leader_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:hasRole ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Role/ProjectLeader_Dataset_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "project_leader" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ProjectLeader/{project_leader_hash}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ProjectLeaderRole>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Role/ProjectLeader_Dataset_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/ProjectLeader_Dataset_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ProjectLeaderRole> ] ;
+  ] .
+
+<#ProjectLeaderRole>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Role/ProjectLeader_Dataset_{id}" ;
+        rr:class ex:projectLeaderRole ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:projectLeaderRole" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/ProjectLeader_Dataset_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:roleOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/ProjectLeader/{project_leader_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:constant "Project Leader Role" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/ProjectLeader_Dataset_{id}" ;
+        ] ;
+    ] . 
+
+<#NamedIndividualIdentificationUnit_DataCreator>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/DataCreator/{data_creator_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataCreator/{data_creator_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#DataCreator> ] ;
+  ] .
+
+<#DataCreator>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/DataCreator/{data_creator_hash}" ;
+        rr:class foaf:person ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "foaf:person" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataCreator/{data_creator_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:hasRole ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Role/DataCreator_Dataset_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "data_creator" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataCreator/{data_creator_hash}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_DataCreatorRole>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Role/DataCreator_Dataset_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/DataCreator_Dataset_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#DataCreatorRole> ] ;
+  ] .
+
+<#DataCreatorRole>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Role/DataCreator_Dataset_{id}" ;
+        rr:class ex:dataCreatorRole ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:dataCreatorRole" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/DataCreator_Dataset_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:roleOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/DataCreator/{data_creator_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:constant "Data Creator Role" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/DataCreator_Dataset_{id}" ;
+        ] ;
+    ] . 
+
+<#NamedIndividualIdentificationUnit_DataCreatorCollector>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/DataCollector/{data_collector_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataCollector/{data_collector_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#DataCollector> ] ;
+  ] .
+
+<#DataCollector>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/DataCollector/{data_collector_hash}" ;
+        rr:class foaf:person ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:dataCreatorRole" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataCollector/{data_collector_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:hasRole ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Role/DataCollector_Dataset_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "data_collector" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataCollector/{data_collector_hash}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_DataCreatorCollectorRole>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Role/DataCollector_Dataset_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/DataCollector_Dataset_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#DataCollectorRole> ] ;
+  ] .
+
+<#DataCollectorRole>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Role/DataCollector_Dataset_{id}" ;
+        rr:class ex:dataCollectorRole ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:dataCollectorRole" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/DataCollector_Dataset_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:roleOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/DataCollector/{data_collector_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:constant "Data Collector Role" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/DataCollector_Dataset_{id}" ;
+        ] ;
+    ] . 
+
+<#NamedIndividualIdentificationUnit_ContactPerson>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/ContactPerson/{contact_person_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ContactPerson/{contact_person_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ContactPerson> ] ;
+  ] .
+
+<#ContactPerson>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/ContactPerson/{contact_person_hash}" ;
+        rr:class foaf:person ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "foaf:person" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ContactPerson/{contact_person_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:hasRole ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Role/ContactPerson_Dataset_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate foaf:mbox ;  
+    rr:objectMap [
+      rr:column "contact_person_contact_email";
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate  prov:actedOnBehalfOf;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Institution/{contact_person_contact_institute_hash}";
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate vcard:street-address ;  
+    rr:objectMap [
+      rr:column "contact_person_contact_street";
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate vcard:postal-code ;  
+    rr:objectMap [
+      rr:column "contact_person_contact_postal_code";
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate vcard:locality ;  
+    rr:objectMap [
+      rr:column "contact_person_contact_city";
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate vcard:hasTelephone ;  
+    rr:objectMap [
+      rr:column "contact_person_contact_phone";
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate vcard:cell ;  
+    rr:objectMap [
+      rr:column "contact_person_contact_mobile";
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "contact_person_contact_name" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ContactPerson/{contact_person_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate schema:url ;  
+    rr:objectMap [
+      rr:column   "contact_person_contact_url" ;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate foaf:name ;
+        rr:objectMap [
+            rr:column "contact_person_contact_name" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ContactPersonRole>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Role/ContactPerson_Dataset_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/ContactPerson_Dataset_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ContactPersonRole> ] ;
+  ] .
+
+<#ContactPersonRole>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Role/ContactPerson_Dataset_{id}" ;
+        rr:class ex:contactPersonRole ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:contactPersonRole" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/ContactPerson_Dataset_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:roleOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/ContactPerson/{contact_person_hash}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:constant "Contact Person Role" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Role/ContactPerson_Dataset_{id}" ;
+        ] ;
+    ] . 
+
+<#NamedIndividualIdentificationUnit_Institutions>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Institution/{contact_person_contact_institute_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Institution/{contact_person_contact_institute_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Institutions> ] ;
+  ] .
+
+<#Institutions>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Institution/{contact_person_contact_institute_hash}" ;
+        rr:class foaf:organisation ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "foaf:organisation" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Institution/{contact_person_contact_institute_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "contact_person_contact_institute" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Institution/{contact_person_contact_institute_hash}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Projects>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Project/{project_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Project/{project_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Projects> ] ;
+  ] .
+
+<#Projects>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Project/{project_hash}" ;
+        rr:class obi:plannedProcess ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:plannedProcess" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Project/{project_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:hasSpecifiedOutput ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Dataset_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:partOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/BE_Contributing_Project" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "project" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Project/{project_hash}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_CoreProjects>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Project/Core/{projects_core_hash}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Project/Core/{projects_core_hash}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#CoreProjects> ] ;
+  ] .
+
+<#CoreProjects>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Project/Core/{projects_core_hash}" ;
+        rr:class obi:plannedProcess ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:plannedProcess" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Project/Core/{projects_core_hash}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:hasSpecifiedOutput ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Dataset_{id}" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:partOf ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/BE_Core_Project" ;
+      rr:termType rr:IRI;
+      ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column "projects_core" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Project/Core/{projects_core_hash}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_DatasetPlotCollection>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/DatasetPlotCollection_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DatasetPlotCollection_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#DatasetPlotCollection_id> ] ;
+  ] .
+
+<#DatasetPlotCollection_id>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/DatasetPlotCollection_{id}" ;
+        rr:class bfo:objectAggregate ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "bfo:objectAggregate" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DatasetPlotCollection_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Dataset Plot Collection for Publication {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DatasetPlotCollection_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:template "Number of GP {number_of_gp}, Number of EP {number_of_ep}, Number of MIP {number_of_mip}, Number of VIP {number_of_vip}" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate dcterms:source ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/Dataset_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:partOf ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{alb_notation}" ;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{hai_notation}" ;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{sch_notation}" ;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{plot_level_clean}{alb_notation}" ;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{plot_level_clean}{hai_notation}" ;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{plot_level_clean}{sch_notation}" ;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{experiment_type}{alb_notation}" ;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{experiment_type}{hai_notation}" ;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{experiment_type}{sch_notation}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Forest>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Forest> ] ;
+  ] .
+
+<#Forest>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_{id}" ;
+        rr:class envo:forestBiome ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:forestBiome" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Forest Environment {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Grassland>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Grassland> ] ;
+  ] .
+
+<#Grassland>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_{id}" ;
+        rr:class envo:grasslandBiome ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:grasslandBiome" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Grassland Environment {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ForestPlot>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestPlot> ] ;
+  ] .
+
+<#ForestPlot>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+        rr:class agro:agriculturalExperimentalPlot ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "agro:agriculturalExperimentalPlot" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Forest Plot {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:locatedIn ;  
+    rr:objectMap [
+      rr:template "http://example.com/base/{forest}_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:hasPart ;  
+    rr:objectMap [
+      rr:template "http://www.wikidata.org/wiki/{animals_invertebrates}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    rr:objectMap [
+      rr:template "http://www.wikidata.org/wiki/{animals_vertebrates}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    rr:objectMap [
+      rr:template "http://www.gbif.org/species/{fungi}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    rr:objectMap [
+      rr:template "http://www.gbif.org/species/{microbes}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    rr:objectMap [
+      rr:template "http://www.gbif.org/species/{plants}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:partOf ;  # part of
+    rr:objectMap [
+      rr:template "http://example.com/base/DatasetPlotCollection_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    ] 
+    .
+
+<#NamedIndividualIdentificationUnit_GrasslandPlot>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandPlot> ] ;
+  ] .
+
+<#GrasslandPlot>
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+        rr:class agro:agriculturalExperimentalPlot ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "agro:agriculturalExperimentalPlot" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Grassland Plot {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate ro:locatedIn ; 
+    rr:objectMap [
+      rr:template "http://example.com/base/{grassland}_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate obi:hasPart ;  
+    rr:objectMap [
+      rr:template "http://www.wikidata.org/wiki/{animals_invertebrates}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    rr:objectMap [
+      rr:template "http://www.wikidata.org/wiki/{animals_vertebrates}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    rr:objectMap [
+      rr:template "http://www.gbif.org/species/{fungi}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    rr:objectMap [
+      rr:template "http://www.gbif.org/species/{microbes}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    rr:objectMap [
+      rr:template "http://www.gbif.org/species/{plants}" ;
+      rr:termType rr:IRI ;
+    ] ;
+    ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate obi:partOf ;  # part of
+    rr:objectMap [
+      rr:template "http://example.com/base/DatasetPlotCollection_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ] .
+
+<#NamedIndividualIdentificationUnit_GrasslandAbovegroundLayer>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{aboveground}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{aboveground}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandAbovegroundLayer> ] ;
+  ] .
+
+<#GrasslandAbovegroundLayer> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}_{aboveground}" ;
+        rr:class envo:layer ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:layer" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{aboveground}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Aboveground Layer of Grassland Plot {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{aboveground}" ;
+        ] ;
+    ] ;
+  
+  rr:predicateObjectMap [
+    rr:predicate obi:partOf ;  # part of
+    rr:objectMap [
+      rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ]
+  .
+
+<#NamedIndividualIdentificationUnit_GrasslandBelowgroundLayer>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{belowground}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{belowground}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandBelowgroundLayer> ] ;
+  ] .
+
+<#GrasslandBelowgroundLayer> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}_{belowground}" ;
+        rr:class envo:layer ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:layer" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{belowground}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Belowground Layer of Grassland Plot {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{belowground}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:partOf ;  # part of
+    rr:objectMap [
+      rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ]
+  .
+
+<#NamedIndividualIdentificationUnit_ForestAbovegroundLayer>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{aboveground}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{aboveground}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestAbovegroundLayer> ] ;
+  ] .
+
+<#ForestAbovegroundLayer> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}_{aboveground}" ;
+        rr:class envo:layer ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:layer" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{aboveground}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Aboveground Layer of Forest Plot {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{aboveground}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:partOf ;  # part of
+    rr:objectMap [
+      rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ]
+  .
+
+<#NamedIndividualIdentificationUnit_ForestBelowgroundLayer>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{belowground}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{belowground}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestBelowgroundLayer> ] ;
+  ] .
+
+<#ForestBelowgroundLayer> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}_{belowground}" ;
+        rr:class envo:layer ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:layer" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{belowground}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Belowground Layer of Forest Plot {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{belowground}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate obi:partOf ;  # part of
+    rr:objectMap [
+      rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ]
+  .
+
+<#NamedIndividualIdentificationUnit_Invertebrates>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/wiki/{animals_invertebrates}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/wiki/{animals_invertebrates}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Invertebrates> ] ;
+  ] .  
+
+<#Invertebrates> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://www.wikidata.org/wiki/{animals_invertebrates}" ;
+        rr:class ex:WIKIDATAID ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:WIKIDATAID" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/wiki/{animals_invertebrates}" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Animals - Invertebrates" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/wiki/{animals_invertebrates}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Vertebrates>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/wiki/{animals_vertebrates}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/wiki/{animals_vertebrates}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Vertebrates> ] ;
+  ] .
+
+<#Vertebrates> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://www.wikidata.org/wiki/{animals_vertebrates}" ;
+        rr:class ex:WIKIDATAID ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:WIKIDATAID" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/wiki/{animals_vertebrates}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Animals - Vertebrates" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/wiki/{animals_vertebrates}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Fungi>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/species/{fungi}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{fungi}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Fungi> ] ;
+  ] .
+
+<#Fungi> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://www.gbif.org/species/{fungi}" ;
+        rr:class ex:GBIFID ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:GBIFID" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{fungi}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Fungi" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{fungi}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Microbes>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/species/{microbes}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{microbes}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Microbes> ] ;
+  ] .
+
+<#Microbes> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://www.gbif.org/species/{microbes}" ;
+        rr:class ex:GBIFID ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:GBIFID" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{microbes}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Microbes" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{microbes}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_Plants>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/species/{plants}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{plants}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Plants> ] ;
+  ] .
+
+<#Plants> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://www.gbif.org/species/{plants}" ;
+        rr:class ex:GBIFID ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:GBIFID" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{plants}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Plants" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/species/{plants}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ForestProcessAndService>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{processandservicelabels}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{processandservicelabels}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestProcessAndService> ] ;
+  ] .
+
+<#ForestProcessAndService>
+  a rr:TriplesMap ;
+
+  rr:logicalTable [
+    rr:tableName "be_dataset_metadata"
+  ] ;
+
+  rr:subjectMap [
+    rr:template "http://example.com/base/{forest}_Plot_{id}_{processandservicelabels}" ;
+    rr:termType rr:IRI
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [
+      rr:column   "processandserviceclass" ;
+      rr:termType rr:IRI
+    ] ;
+    rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{processandservicelabels}"  ;
+    ] ;
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [
+      rr:constant obi:process ;
+      rr:termType  rr:IRI
+    ] ;
+    rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{processandservicelabels}"  ;
+    ] ;
+  ] ;
+
+  rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column   "processandservicelabels" ;
+        ] ;
+        rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{processandservicelabels}"  ;
+    ] ;
+    ] ;
+
+  rr:predicateObjectMap [
+        rr:predicate ro:has_participant ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_GrasslandProcessAndService>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{processandservicelabels}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{processandservicelabels}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandProcessAndService> ] ;
+  ] .
+
+<#GrasslandProcessAndService>
+  a rr:TriplesMap ;
+
+  rr:logicalTable [
+    rr:tableName "be_dataset_metadata"
+  ] ;
+
+  rr:subjectMap [
+    rr:template "http://example.com/base/{grassland}_Plot_{id}_{processandservicelabels}" ;
+    rr:termType rr:IRI
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [
+      rr:column   "processandserviceclass" ;
+      rr:termType rr:IRI
+    ] ;
+    rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{processandservicelabels}"  ;
+    ] ;
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [
+      rr:constant obi:process ;
+      rr:termType  rr:IRI
+    ] ;
+    rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{processandservicelabels}"  ;
+    ] ;
+  ] ;
+
+ rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column   "processandservicelabels" ;
+        ] ;
+        rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{processandservicelabels}"  ;
+    ] ;
+    ] ;
+
+  rr:predicateObjectMap [
+        rr:predicate ro:hasParticipant ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_BioticDataType>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/BioticDataType/{bioticdatatypeclass}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/BioticDataType/{bioticdatatypeclass}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#BioticDataType> ] ;
+  ] .
+
+<#BioticDataType>
+  a rr:TriplesMap ;
+
+  rr:logicalTable [
+    rr:tableName "be_dataset_metadata"
+  ] ;
+
+  rr:subjectMap [
+    rr:template "http://example.com/base/BioticDataType/{bioticdatatypeclass}" ;
+    rr:termType rr:IRI
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [
+      rr:column   "bioticdatatypeclass" ;
+      rr:termType rr:IRI
+    ] ;
+    rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/BioticDataType/{bioticdatatypeclass}"  ;
+    ] ;
+  ] ;
+
+ rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:column   "bioticdatatypelabel" ;
+        ] ;
+        rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/BioticDataType/{bioticdatatypeclass}"  ;
+    ] ;
+] .
+
+<#NamedIndividualIdentificationUnit_ForestSoil>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_soil}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_soil}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestSoil> ] ;
+  ] .
+
+<#ForestSoil> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}_{environmentaldescriptors_soil}" ;
+        rr:class envo:soil ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [
+      rr:template   "envo:soil" ;
+      rr:termType rr:IRI
+    ] ;
+    rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_soil}"  ;
+    ] ;
+  ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_soil" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_soil}"  ;
+    ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:partOf ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_GrasslandSoil>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_soil}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_soil}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandSoil> ] ;
+  ] .
+
+<#GrasslandSoil> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}_{environmentaldescriptors_soil}" ;
+        rr:class envo:soil ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [
+      rr:template "envo:soil" ;
+      rr:termType rr:IRI
+    ] ;
+    rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_soil}"  ;
+    ] ;
+  ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_soil" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+        rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_soil}"  ;
+    ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:partOf ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ForestClimate>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_climate}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_climate}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestClimate> ] ;
+  ] .
+
+<#ForestClimate> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}_{environmentaldescriptors_climate}" ;
+        rr:class envo:climate ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:climate" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_climate}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_climate" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_climate}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ro:disposition ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_GrasslandClimate>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_climate}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_climate}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandClimate> ] ;
+  ] .
+
+<#GrasslandClimate> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}_{environmentaldescriptors_climate}" ;
+        rr:class envo:climate ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:climate" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_climate}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_climate" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_climate}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ro:disposition ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ForestLandUse>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_landuse}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_landuse}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestLandUse> ] ;
+  ] .
+
+<#ForestLandUse> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}_{environmentaldescriptors_landuse}" ;
+        rr:class envo:landuseprocess ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:landuseprocess" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_landuse}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_landuse" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_landuse}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ro:hasParticipant ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_GrasslandLandUse>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_landuse}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_landuse}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandLandUse> ] ;
+  ] .
+
+<#GrasslandLandUse> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}_{environmentaldescriptors_landuse}" ;
+        rr:class envo:landuseprocess ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envo:landuseprocess" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_landuse}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_landuse" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_landuse}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate ro:hasParticipant ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ForestHabitatStructure>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_habitat}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_habitat}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestHabitatStructure> ] ;
+  ] .
+
+<#ForestHabitatStructure> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}_{environmentaldescriptors_habitat}" ;
+        rr:class envthes:habitatStructure ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envthes:habitatStructure" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_habitat}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_habitat" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_habitat}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate sio:isPropertyOf ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_GrasslandHabitatStructure>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_habitat}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_habitat}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandHabitatStructure> ] ;
+  ] .
+
+<#GrasslandHabitatStructure> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}_{environmentaldescriptors_habitat}" ;
+        rr:class envthes:habitatStructure ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envthes:habitatStructure" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_habitat}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_habitat" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_habitat}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate sio:isPropertyOf ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ForestSpatial>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_spatial}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_spatial}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestSpatial>  ] ;
+  ] .
+
+<#ForestSpatial> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}_{environmentaldescriptors_spatial}" ;
+        rr:class envthes:spatial ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envthes:spatial" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_spatial}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_spatial" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_spatial}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate envthes:constrains ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_GrasslandSpatial>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_spatial}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_spatial}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandSpatial> ] ;
+  ] .
+
+<#GrasslandSpatial> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}_{environmentaldescriptors_spatial}" ;
+        rr:class envthes:spatial ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "envthes:spatial" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_spatial}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_spatial" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_spatial}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate envthes:constrains ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ForestOther>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_other}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_other}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ForestOther> ] ;
+  ] .
+
+<#ForestOther> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{forest}_Plot_{id}_{environmentaldescriptors_other}" ;
+        rr:class ex:environmentalDescriptorOther ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:environmentalDescriptorOther" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_other}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_other" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{forest}_Plot_{id}_{environmentaldescriptors_other}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate envthes:constrains ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{forest}_Plot_{id}" ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_GrasslandOther>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_other}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_other}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#GrasslandOther> ] ;
+  ] .
+
+<#GrasslandOther> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/{grassland}_Plot_{id}_{environmentaldescriptors_other}" ;
+        rr:class ex:environmentalDescriptorOther ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "ex:environmentalDescriptorOther" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_other}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "environmentaldescriptors_other" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/{grassland}_Plot_{id}_{environmentaldescriptors_other}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate envthes:constrains ;
+        rr:objectMap [
+            rr:template "http://example.com/base/{grassland}_Plot_{id}" ;
+        ] ;
+    ] .
+
+#-------investigation start---------
+
+<#NamedIndividualIdentificationUnit_Investigation>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/Investigation_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Investigation_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#Investigation> ] ;
+  ] .
+
+<#Investigation> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/Investigation_{id}" ;
+        rr:class obi:investigation ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:investigation" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Investigation_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Investiation {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/Investigation_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:hasPart ;
+        rr:objectMap [
+            rr:template "http://example.com/base/StudyDesignExecution_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_StudyDesignExecution>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/StudyDesignExecution_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/StudyDesignExecution_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#StudyDesignExecution> ] ;
+  ] .
+
+<#StudyDesignExecution> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/StudyDesignExecution_{id}" ;
+        rr:class obi:studyDesignExecution ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:studyDesignExecution" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/StudyDesignExecution_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "StudyDesignExecution {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/StudyDesignExecution_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:hasPart ;
+        rr:objectMap [
+            rr:template "http://example.com/base/SamplingPreparation_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/SampleAnalysis_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/DataPreparation_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/DataAnalysis_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:realizes ;
+        rr:objectMap [
+            rr:template "http://example.com/base/SamplingDesign_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/StudyDesign_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_StudyDesign>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/StudyDesign_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/StudyDesign_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#StudyDesign> ] ;
+  ] .
+
+<#StudyDesign> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/StudyDesign_{id}" ;
+        rr:class obi:studyDesign ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:studyDesign" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/StudyDesign_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "studydesign" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Study Design {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/StudyDesign_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:hasPart ;
+        rr:objectMap [
+            rr:template "http://example.com/base/ExperimentalManipulation_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/TemporalRepetitionsPerStudySite_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+        rr:objectMap [
+            rr:template "http://example.com/base/PlotBasedRepititionsOfMeasurements_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_ExperimentalManipulation>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/ExperimentalManipulation_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ExperimentalManipulation_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#ExperimentalManipulation> ] ;
+  ] .
+
+<#ExperimentalManipulation> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/ExperimentalManipulation_{id}" ;
+        rr:class obi:protocol ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:protocol" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ExperimentalManipulation_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "experimentalmanipulation" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Experimental Manipulation {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/ExperimentalManipulation_{id}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_TemporalRepetitionsPerStudySite>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/TemporalRepetitionsPerStudySite_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/TemporalRepetitionsPerStudySite_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#TemporalRepetitionsPerStudySite> ] ;
+  ] .
+
+<#TemporalRepetitionsPerStudySite> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/TemporalRepetitionsPerStudySite_{id}" ;
+        rr:class obi:protocol ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:protocol" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/TemporalRepetitionsPerStudySite_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "temporalrepetitionsperstudysite" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Temporal Repetitions Per Study Site {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/TemporalRepetitionsPerStudySite_{id}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_PlotBasedRepititionsOfMeasurements>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/PlotBasedRepititionsOfMeasurements_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/PlotBasedRepititionsOfMeasurements_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#PlotBasedRepititionsOfMeasurements> ] ;
+  ] .
+
+<#PlotBasedRepititionsOfMeasurements> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/PlotBasedRepititionsOfMeasurements_{id}" ;
+        rr:class obi:protocol ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:protocol" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/PlotBasedRepititionsOfMeasurements_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "plotbasedrepetitionsofmeasurements" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Plot Based Repititions Of Measurements {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/PlotBasedRepititionsOfMeasurements_{id}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_SamplingDesign>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/SamplingDesign_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SamplingDesign_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#SamplingDesign> ] ;
+  ] .
+
+<#SamplingDesign> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/SamplingDesign_{id}" ;
+        rr:class obi:studyDesign ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:studyDesign" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SamplingDesign_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "samplingdesign" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Sampling Design {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SamplingDesign_{id}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_SamplingPreparation>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/SamplingPreparation_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SamplingPreparation_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#SamplingPreparation> ] ;
+  ] .
+
+<#SamplingPreparation> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/SamplingPreparation_{id}" ;
+        rr:class obi:materialProcessing ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:materialProcessing" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SamplingPreparation_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "samplepreparation" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Sampling Preparation {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SamplingPreparation_{id}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_SampleAnalysis>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/SampleAnalysis_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SampleAnalysis_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#SampleAnalysis> ] ;
+  ] .
+
+<#SampleAnalysis> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/SampleAnalysis_{id}" ;
+        rr:class obi:assay ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:assay" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SampleAnalysis_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "sampleanalysis" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Sample Analysis {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/SampleAnalysis_{id}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_DataPreparation>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/DataPreparation_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataPreparation_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#DataPreparation> ] ;
+  ] .
+
+<#DataPreparation> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/DataPreparation_{id}" ;
+        rr:class obi:dataTransformation ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "obi:dataTransformation" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataPreparation_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "datapreperation" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:hasSpecifiedOutput ;
+        rr:objectMap [
+            rr:template "http://example.com/base/Dataset_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Data Preparation {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataPreparation_{id}"  ;
+        ] ;
+    ] .
+
+<#NamedIndividualIdentificationUnit_DataAnalysis>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+  rr:subjectMap     [
+    rr:template    "http://example.com/base/semunit/namedindividualidentificationunit/DataAnalysis_{id}" ;
+    rr:graphMap    [ rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataAnalysis_{id}" ] ;
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:namedindividualidentificationunit] ;
+  ] ; 
+
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap  [ rr:parentTriplesMap <#DataAnalysis> ] ;
+  ] .
+
+<#DataAnalysis> 
+a rr:TriplesMap ;
+
+    rr:logicalTable [ rr:tableName "be_dataset_metadata"] ;
+
+    rr:subjectMap [
+        rr:template "http://example.com/base/DataAnalysis_{id}" ;
+        rr:class addicto:statisticalAnalysis ;
+        rr:termType rr:IRI;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdf:type ;
+        rr:objectMap [
+            rr:template "addicto:statisticalAnalysis" ;
+            rr:termType rr:IRI ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataAnalysis_{id}"  ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate dcterms:description ;
+        rr:objectMap [
+            rr:column "dataanalysis" ;
+            rr:language "en" ;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate obi:isSpecifiedOutput ;
+        rr:objectMap [
+            rr:template "http://example.com/base/Dataset_{id}" ;
+            rr:termType rr:IRI;
+        ] ;
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate rdfs:label ;
+        rr:objectMap [
+            rr:template "Data Analysis {id}" ;
+            rr:language "en" ;
+        ] ;
+        rr:graphMap  [
+            rr:template "http://example.com/base/semunit/namedindividualidentificationunit/DataAnalysis_{id}"  ;
+        ] ;
+    ] .
+
+#----
+
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex:   <http://example.com/base/> .
+@prefix semunit: <http://example.com/base/semanticunits/> .
+
+<#specifiedOutputOfStatementUnit_Dataset>
+  a rr:TriplesMap ;
+
+  # One logical table via SQL that yields BOTH ids:
+  rr:logicalTable [
+    rr:sqlQuery """
+      -- Dataset ↔ Publication pairs derived from be_links
+      -- (handles either direction in links_source/types vs links_target/types)
+      WITH lp AS (
+        SELECT
+          CASE WHEN l.links_source_types = 'Dataset'     THEN l.links_source_ids
+               WHEN l.links_target_types = 'Dataset'     THEN l.links_target_ids
+          END AS dataset_id,
+          CASE WHEN l.links_source_types = 'Publication' THEN l.links_source_ids
+               WHEN l.links_target_types = 'Publication' THEN l.links_target_ids
+          END AS pub_id,
+          l.links_reference_types
+        FROM be_links l
+        WHERE
+          (l.links_source_types IN ('Dataset','Publication')
+           AND l.links_target_types IN ('Dataset','Publication'))
+      )
+      SELECT DISTINCT
+        d.id   AS dataset_id,
+        p.id   AS pub_id
+      FROM lp
+      JOIN be_dataset_metadata     d ON d.id = lp.dataset_id
+      JOIN be_publication_metadata p ON p.id = lp.pub_id
+      -- OPTIONAL: restrict to particular link kinds that denote
+      -- “publication ↔ dataset (specified output)”:
+      -- WHERE lp.links_reference_types IN ('usesDataset','documents','isDocumentedBy')
+    """
+  ] ;
+
+  # Subject is the Dataset-specific SU
+  rr:subjectMap [
+    rr:template "http://example.com/base/semunit/specifiedOutputOfStatementUnit/Dataset_{dataset_id}" ;
+    rr:termType rr:IRI
+  ] ;
+
+  # Types
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:specifiedOutputOfStatementUnit ] ;
+    rr:graphMap   [ rr:template "http://example.com/base/semunit/specifiedOutputOfStatementUnit/Dataset_{dataset_id}" ] ;
+    rr:graphMap   [ rr:template "http://example.com/base/semunit/Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit/Publication_{pub_id}" ] ;
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap  [ rr:constant semunit:assertionalStatementUnit ] ;
+    rr:graphMap   [ rr:template "http://example.com/base/semunit/specifiedOutputOfStatementUnit/Dataset_{dataset_id}" ] ;
+    rr:graphMap   [ rr:template "http://example.com/base/semunit/Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit/Publication_{pub_id}" ] ;
+  ] ;
+
+  # Link this SU to the dataset resource itself
+  rr:predicateObjectMap [
+  rr:predicate ex:semanticUnitSubject ;
+  rr:objectMap [
+    rr:template "http://example.com/base/Dataset_{dataset_id}" ;  # must match <#Dataset_id> template exactly
+    rr:termType rr:IRI
+  ] ;
+  rr:graphMap [ rr:template "http://example.com/base/semunit/specifiedOutputOfStatementUnit/Dataset_{dataset_id}" ] ;
+  rr:graphMap [ rr:template "http://example.com/base/semunit/Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit/Publication_{pub_id}" ] ;
+] .
+
+
+#<#isSpecifiedOutputOf_Dataset>
+#  a rr:TriplesMap ;
+#  rr:logicalTable   [ rr:tableName "be_dataset_metadata" ] ;
+#  rr:subjectMap     [
+#    rr:template    "http://example.com/base/semunit/specifiedOutputOfStatementUnit/Dataset_{id}" ;
+#    rr:graphMap    [ rr:template "http://example.com/base/semunit/specifiedOutputOfStatementUnit/Dataset_{id}" ] ;
+#  ] ;
+#  rr:predicateObjectMap [
+#    rr:predicate rdf:type ;
+#    rr:objectMap  [ rr:constant semunit:partOfStatementUnit] ;
+#  ] ;
+#  rr:predicateObjectMap [
+#    rr:predicate rdf:type ;
+#    rr:objectMap  [ rr:constant semunit:assertionalStatementUnit] ;
+#  ] ;  
+
+#  rr:predicateObjectMap [
+#    rr:predicate ex:semanticUnitSubject ;
+#    rr:objectMap  [ rr:parentTriplesMap <#Dataset_id> ] ;
+#  ] . 

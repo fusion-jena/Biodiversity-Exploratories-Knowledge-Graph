@@ -1,0 +1,545 @@
+Id,project,plot_level,alb,sch,hai,number_of_gp,number_of_ep,number_of_mip,number_of_vip,biotic_data_taxon,experimental_manipulation,temporal_repetitions,plot_repetitions,study_design,sampling_design,equipment,data_preparation,processes_and_services,biotic_data_type,grassland,forest,aboveground,belowground,keywords,content_type,environmental_descriptors,environmentaldescriptors_spatial,environmentaldescriptors_soil,environmentaldescriptors_landuse,environmentaldescriptors_habitat,environmentaldescriptors_climate,environmentaldescriptors_other,Acronym,Meaning,sampling_preparation,experiment_type,sample_analysis,data_analysis
+1000,BExIS (core),VIP,yes,yes,yes,3094,300,150,57,Plants,yes,no,no,"Further information can be found on the project website: http://www.biodiversity-exploratories.de/
+or in literature (see literature reference section below).","Further information can be found on the project website: http://www.biodiversity-exploratories.de/
+or in literature (see literature reference section below).","gps device, eye",Coordinates of the Plots are obscured by rounding the decimal coordinates to 2 decimal places.,None,Single species,yes,yes,yes,yes,plot information,Structured data,,,,,,,,,,,,,
+1580,BEO (core),VIP,yes,yes,yes,3094,300,150,57,None,no,no,no,"We created a summary of the main geographic characteristics (location, size, and altitude) based on GIS analysis and environmental characteristics (temperature and precipitation) based climate data.","The location (coordinates), size, and altitude of the Exploratories is based on dataset 5460.
+
+Maps of the borders of Exploratories are provided in dataset 31234.",,,Other,None,yes,yes,yes,no,,Structured data,,,,,,,,,,,,,
+1880,Botany (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,,-,,Unsicher bestimmte Arten sindmit cf im Namen gekenzeichnet,Other,None,no,no,no,no,,Structured data,Other,,,,,,Other,cf,mit Unsicherheit/Fehler,,,,
+2320,Forest (core),VIP,yes,yes,yes,1917,140,71,27,None,no,no,no,"View forest inventory instructions in dataset with ID 15146.
+
+(Note: former name of the section was measurements/theory)",-,Instruments: view forest inventory instructions,,Productivity,Aggregated diversity,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+2349,Forest (core),VIP,yes,yes,yes,1922,143,73,29,Plants,no,no,no,"view forest inventory instructions under Forest Inventory
+(https://exploratories.bgc-jena.mpg.de:444/FieldBook/Informations/ExploInfo.aspx)
+
+(Note: former name of the section was measurements/theory)",-,Instruments: view forest inventory instructions,-,Other,,no,yes,yes,no,,Structured data,,,,,,,,-,-,,,,
+2350,Forest (core),VIP,yes,yes,yes,1870,140,71,28,None,no,no,no,"view forest inventory instructions under Forest Inventory
+(https://exploratories.bgc-jena.mpg.de:444/FieldBook/Informations/ExploInfo.aspx)
+
+(Note: former name of the section was measurements/theory)",-,Instruments: view forest inventory instructions,-,Other,None,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,-,-,,,,
+2351,Forest (core),VIP,yes,yes,yes,1835,102,51,18,Plants,no,no,no,"view forest inventory instructions  under Forest Inventory
+(https://exploratories.bgc-jena.mpg.de:444/FieldBook/Informations/ExploInfo.aspx)
+
+(Note: former name of the section was measurements/theory)",-,Instruments: view forest inventory instructions,-,Other,,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,-,-,,,,
+2352,Forest (core),VIP,yes,yes,yes,1799,96,48,19,Plants,no,no,no,"view forest inventory instructions under Forest Inventory
+(https://exploratories.bgc-jena.mpg.de:444/FieldBook/Informations/ExploInfo.aspx)
+
+(Note: former name of the section was measurements/theory)",-,Instruments: view forest inventory instructions,-,Other,,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,-,-,,,,
+2353,Forest (core),VIP,yes,yes,yes,1835,101,50,17,Plants,no,no,no,"view forest inventory instructions under Forest Inventory
+(https://exploratories.bgc-jena.mpg.de:444/FieldBook/Informations/ExploInfo.aspx)
+
+(Note: former name of the section was measurements/theory)",-,Instruments: view forest inventory instructions,-,Other,,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,-,-,,,,
+2480,Forest (core),VIP,yes,yes,yes,1673,108,54,22,None,no,no,no,"view forest inventory instructions under datasetid 15146
+
+(Note: former name of the section was measurements/theory)",-,Instruments: view forest inventory instructions,,None,Aggregated diversity,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+2500,Forest (core),VIP,yes,yes,yes,1758,127,63,26,None,no,no,no,view forest inventory instructions under dataset id 15146,-,Instruments: view forest inventory instructions,,None,None,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+2623,Vertebrates II (core),,yes,yes,yes,0,0,0,0,Animals - Vertebrates,no,no,no,"sighting and defining number and kind of nocturnal species in the wild due to eye flashing in a spotlight cone
+
+(Note: former name of the section was measurements/theory)","creating counting index of nocturnal animals in forest and openland habitats
+
+(Note: former name of the section was measurements/type)","Instruments: car with two fixed spotlights (50Watt), two mobile spotlights (100Watt) and two counting people
+
+Calibration: computing the mean number of two consecutive counting events with 48 hour pause
+
+Procedure: driving along the counting track from 8 pm and counting all visible animals",,Other,,yes,yes,yes,no,spotlight count mammals,Structured data,,,,,,,,,,,,,
+2663,,MIP,yes,yes,yes,19,2,2,0,Animals - Invertebrates,no,no,no,,"All individuals of the slug A. rufus that were found on the ground within the 20 x 20 m plot were counted. The plot was searched using eight transect lines from east to west and west to east. Highly structured areas within the plot were searched more intensively. No dead wood or leaf litter were turned around to search for hidden slugs.
+
+(Note: former name of the section was measurements/type)",,,Other,,no,yes,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+2740,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Aufnahmeanleitung des NP Hainich aus dem Jahr 2000.
+
+(Note: former name of the section was measurements/theory)","Konzentrische Probekreise.
+
+(Note: former name of the section was measurements/type)",Instruments: VERTEX-III,-,Other,None,no,yes,yes,no,,Structured data,Spatial,Spatial,,,,,,-,-,,,,
+2741,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 3Aufnahmeanleitung des NP Hainich aus dem Jahr 2000.Aufnahmeanleitung zur Waldinventur in den Exploratorien.
+
+(Note: former name of the section was measurements/theory)","Konzentrische Probekreise.
+
+(Note: former name of the section was measurements/type)",Instruments: VERTEX-III,-,Other,,no,yes,yes,no,,Structured data,Spatial,Spatial,,,,,,-,-,,,,
+2742,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Aufnahmeanleitung des NP Hainich aus dem Jahr 2000
+
+(Note: former name of the section was measurements/theory)","Konzentrische Probekreise
+
+(Note: former name of the section was measurements/type)",Instruments: VERTEX-III,-,Other,None,no,no,no,no,,Structured data,Spatial,Spatial,,,,,,-,-,,,,
+2760,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 3Aufnahmeanleitung des NP Hainich aus dem Jahr 2000.Aufnahmeanleitung zur Waldinventur in den Exploratorien.
+
+(Note: former name of the section was measurements/theory)","Konzentrische Probekreise.
+
+(Note: former name of the section was measurements/type)",Instruments: VERTEX-III,-,Other,,no,yes,yes,no,,Structured data,Other,,,,,,Other,-,-,,,,
+2847,Soilomics,VIP,yes,yes,yes,36,36,36,36,None,no,no,no,"Nachdem totale DNA aus den Bodenproben (A-Horizont) unter Verwendung des PowerMax Soil DNA Isolation Kit (MOBIO) extrahiert wurde, erfolgte die Messung der DNA-Konzentrationen mittels Nano-Drop spectrophotometer ND 1000. Anschließend wurde die DNA Menge in Mikrogramm pro Gramm Boden errechnet. Die Bodenproben wurden innerhalb der koordinierten Bodenprobennahme 2008 gesammelt.   
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: Nano-Drop spectrophotometer ND 1000
+
+Calibration: Kalibration gegen Wasser",none,Other,None,yes,yes,no,yes,DNA,Structured data,Soil,,Soil,,,,,µg,Mikrogramm,,,,
+2880,NanoFaun,VIP,yes,yes,yes,8,8,8,8,Microbes,no,no,no,"VIP soil samples, genetic and morphological determination of species
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: Suspension, PCR, LAM
+
+Procedure: Delution of Soil to seperate Oragnisms from soil with LAM.
+Further determination and cultivation. Including phylogenetic studies",,Other,,yes,yes,no,yes,Nanofauna,Structured data,Other,,,,,,Other,,,,,,
+2905,Botany (core),VIP,yes,yes,yes,8,8,8,8,Fungi,yes,yes,yes,"Number of time based repetitions (information from the old BExIS schema): 3
+
+Number of plot based repetitions (information from the old BExIS schema): 40
+
+
+
+Long-term experiment (6 years), excluding gastropods from epiphytic cryptogam communities on European beech and Norway spruce. We focus on the response of algae, bryophyte, fungus and lichen abundance as well as lichen and bryophyte species richness 6 years after the start of the experiment. 
+
+Test of intermediate disturbance hypothesis by gastropod grazing in epiphytic cryptogam communities.
+
+
+(Note: former name of the section was measurements/theory)","In April 2008, we selected two trees per plot, which were representative for other trees occurring in the particular plot in terms of tree species identity, height and diameter at breast height (DBH). On each tree we placed a vertical transect with each five 10cm × 10cm subplots in each direction of the tree trunk and permanently marked the area with a staple gun using corrosion-free aluminium staples. In April 2008, we recorded the percentage cover of all lichen and bryophyte species as well as the total cover of free living green algae in each subplot. Then, we excluded gastropods from one of these trees by applying a 10 cm broad barrier of slug-repellent paste (IRKA Schneckenabwehrpaste; R+M Gartenbedarf GbR) at tree base two times per year, once in March before the vegetation period began and gastropods started to be active and once in June. In April 2011 and 2014 we repeated vegetation records including estimations for cover and grazing damage per species, and also recorded the cover of bark colonizing fungus species.
+
+(Note: former name of the section was measurements/type)",Instruments: Gastropod defence paste.,,,Total abundance,no,yes,yes,no,,Structured data,,,,,,,,,,,,,
+2920,PhylloMethylotrophs,VIP,yes,yes,yes,22,22,15,8,Microbes,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 2concentration of pink-pigmented facultative methylotrophs (colony forming units) per gramm leaf fresh weight 
+
+(Note: former name of the section was measurements/theory)","plate counting: counting of pink-pigmented colonies detected on methylobacterium medium M125
+
+(Note: former name of the section was measurements/type)","Instruments: lab blender: Stomacher 80 Biomaster, SEWARD LABORATORY SYSTEM INC. (UK)
+
+Procedure: Leaf samples were weighed (fresh weight) and put in 10 ml of potassium phosphate buffer (6.75 g KH2PO4 and 8.75 g K2HPO4 per liter) and mechanically treated with the Stomacher lab blender (120 sec, normal speed). Serial dilutions were prepared (0.5 ml in 4.5 ml of NaCl). 0.1 ml of each dilution step was streaked out on medium M125 (DSMZ) in three parallels. Plates were incubated at 25°C. Pink colonies were counted after 14 days. CFU per g leaf weight were calculated as follows: number of pink colonies was multiplied with dilution step, average was formed of n parallels, average was multiplied with dilution factor (100) and divided with the leaf weight.",NA,Other,,yes,no,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+2925,Vertebrates I (core),,yes,yes,yes,0,0,0,0,Animals - Vertebrates,yes,no,no,"Ausschlussexperimente, 8 Stieleichen werden eingenetzt, 8 dienen als Kontrollbäume; Bäume außerhalb der EPs
+
+(Note: former name of the section was measurements/theory)","Einnetzen der Bäume, phytometrische Analysen
+
+(Note: former name of the section was measurements/type)","Instruments: Vogelschutznetze, Hebebühne
+
+Procedure: Einnetzer der Bäume im Mai, Abhängen der Netze im Oktober. Zu Beginn, in der Mitte und am Ende der Untersuchung wurden 60 Blätter pro Baum für Bestimmung des Blattfraßes gesammelt",none,Ecological process - Herbivory,None,no,yes,yes,no,,Structured data,Other,,,,,,Other,none,,,,,
+3020,InsectScale,VIP,yes,yes,yes,150,150,75,27,Animals - Invertebrates,yes,yes,yes,"Number of time based repetitions (information from the old BExIS schema): 4
+
+Number of plot based repetitions (information from the old BExIS schema): 3
+
+
+
+Arthropod abundances in grassland can best be determined using suction-sampling techniques (i.e. sampling a given three-dimensional volume/space).
+
+(Note: former name of the section was measurements/theory)","count data
+
+(Note: former name of the section was measurements/type)","Instruments: D-Vac (Stihl SH 56)  suction sampler for 1 min
+
+Calibration: suction sampler used for 1 min
+(see Brook et al. 2008)
+
+Procedure: Each sample was taken by covering a 0.25 m2 area of vegetation with a gauze-cage to prevent insects from escaping. The insects inside the cage were then extracted into gauze bags using a D-Vac (Stihl SH 56) for 1 min (Brook et al. 2008). Samples were transferred into 70% Ethanol until insects were sorted. We identified bugs and beetles to species level. We took four samples per subplot during two runs per season.",not applicable,Other,,yes,no,yes,no,,Structured data,Other,,,,,,Other,EP_PlotId,,,,,
+3141,LMT (core),VIP,yes,yes,yes,50,50,25,9,None,no,yes,no,,-,"Procedure: Trend: Bei der Erhebung der Landnutzungsart- und Intensität 2006 (Methode: Interview, Zeitraum: August bis Dezember 2007) der Grünlandflächen wurden u.a. die unterschiedlichen Arten der Beweidung, der Mahd sowie der Pflegemaßnahmen (Düngung, Einsaat, Bodenbearbeitung, etc.) befragt. Ausgehend von diesen Angaben werden folgendermaßen potenzielle Zeiträume für einen „Bewirtschaftungstrend 2008“ abgeleitet:Mahdtermin: Angegebener Zeitraum plus eine Woche vor, plus eine Woche nach TerminBeweidung: Angegebener Zeitraum 2006: innerhalb des Zeitraums findet generell Weidung statt, ja nach Methode kann die Anzahl der Weidegänge mit jeweiliger Verweildauer variieren.Pflege: Angegebener Zeitraum 2006: plus eine Woche vor, plus eine Woche nach TerminNachsaat: Angegebener Zeitraum 2006: plus eine Woche vor, plus eine Woche nach TerminDüngung: Angegebener Zeitraum 2006 : plus eine Woche vor, plus eine Woche nach TerminDie Angabe „Frühling“ ist in den Zeitraum KW 10-KW18 übertragen.",,Other,None,yes,no,yes,no,Management,Structured data,Land use,,,Land use,,,,KW,Kalenderwoche,,,,
+3220,Soil (biotic) V,VIP,yes,yes,yes,57,57,57,57,None,no,no,no,,-,"Instruments: drying oven
+
+Calibration: 105 degree
+
+Procedure: weigh in 20 g of mineral soil (field moisture) in a glass pot, put for 48 h in the drying oven, calculate water content of sample",,Biogeochemical cycle - Water,None,yes,yes,no,yes,"water content, soil moisture",Structured data,Soil,,Soil,,,,,-,-,,,,
+3360,Forest (core),VIP,yes,yes,yes,910,67,29,11,None,no,no,no,Mapping of disturbance (gutachterliche Ansprache).,Area size: 30 x 30m,,,Other,None,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+3540,Forest (core),VIP,yes,yes,yes,73,6,2,1,None,no,no,no,"Vermessung Totholz in konzentrischen Probekreisen
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,,None,no,yes,yes,no,,Structured data,,,,,,,,,,,,,
+3541,Forest (core),VIP,yes,yes,yes,79,6,2,1,None,no,no,no,"Kopfdaten
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,,None,no,yes,yes,no,,Structured data,,,,,,,,,,,,,
+3542,Forest (core),VIP,yes,yes,yes,79,6,2,1,None,no,no,no,,-,,k.A.,Other,None,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+3543,Forest (core),VIP,yes,yes,yes,57,4,1,1,None,no,no,no,"Aufnahme in 2 Quadraten mit einer Fläche von jeweils 4 m² im Norden und Süden
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,,None,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+3544,Forest (core),VIP,yes,yes,yes,30,4,2,1,None,no,no,no,"Verjüngung im PK4
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,,None,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+3545,Forest (core),VIP,yes,yes,yes,65,6,2,1,None,no,no,no,"Waldinventuranweisung
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,Other,Multiple species,no,yes,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+3546,Forest (core),VIP,yes,yes,yes,75,6,2,1,Plants,no,no,no,Forest inventory in Hainich-Dün region.,Sampling based on forest inventory instructions with modification by Jana Wäldchen.,,,Other,,no,yes,yes,no,forest inventory,Structured data,,,,,,,,,,,,,
+3547,Forest (core),MIP,yes,yes,yes,53,4,1,0,None,no,no,no,"Waldinventuranweisung
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,,None,no,yes,yes,no,forest inventory,Structured data,,,,,,,,,,,,,
+3701,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Stichprobeninventur in konzentrischen Probekreisen im 200m-Raster
+
+(Note: former name of the section was measurements/theory)",-,,none,Other,None,no,yes,yes,no,,Structured data,Spatial,Spatial,,,,,,forest inventory,,,,,
+3702,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Stichprobeninventur in konzentrischen Probekreisen im 200m-Raster
+
+(Note: former name of the section was measurements/theory)",-,,none,Other,None,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,forest inventory,,,,,
+3705,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Stichprobeninventur in konzentrischen Probekreisen im 200m-Raster
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,Decomposition,None,no,yes,yes,no,,Structured data,Other,,,,,,Other,forest -inventory,,,,,
+3706,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,Inventory sampling in concentric sample circles in a 200m grid.,Forest inventory instructions with modifications by Jana Wäldchen,,,Other,,no,yes,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+3707,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,"Stichprobeninventur in konzentrischen Probekreisen im 200m-Raster Verjüngung im Probekreis IV
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,Productivity,,no,yes,yes,no,,Structured data,Other,,,,,,Other,forest inventory,,,,,
+3708,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,"Stichprobeninventur in konzentrischen Probekreisen im 200m-Raster
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,Ecological process - Herbivory,,no,yes,yes,no,,Structured data,Other,,,,,,Other,forest inventory,,,,,
+3709,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,,-,,k.A.,Other,None,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,forest inventory,,,,,
+3901,Vertebrates II (core),VIP,yes,yes,yes,247,247,127,48,Animals - Vertebrates,no,yes,no,"Trapping with live traps (tree repetitions), meaning that each individual animal is treated and released. Recapture is possible as the animals are marked with earpunch when they are first caught.","Animals are taken out of the trap before handling. They were marked by earpunch. Beside the species determination, the body conditions were measured, they were searched for parasites, and left free again. Some environmental factors were also recorded at the trapping event.","multiple live capture traps ""Ugglan-Type2"", Pesola spring scale 100g, Earpunch ""F.S.T""",,Other,,yes,yes,yes,no,Small mammal trapping,Structured data,Other,,,,,,Other,,,,,,
+3921,GenLink,VIP,yes,yes,yes,63,63,33,6,Plants,no,no,no,"see:
+Kloss, Fischer & Durka (2011). Land-use effects on genetic structure of a common grassland herb: a matter of scale. Basic and Applied Ecology, in press. 
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: PCR, capillary electrophoresis",,,,yes,no,yes,no,,Structured data,,,,,,,,,,,,,
+3923,Vertebrates II (core),,yes,yes,yes,0,0,0,0,Animals - Vertebrates,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 3Observing location data via accoustic signal from a radiotag recieved by Yagi Antenna and Telonics Receiver.
+
+(Note: former name of the section was measurements/theory)","location data with easting and northing in meters from a fixed reference point (trapping grid)
+
+(Note: former name of the section was measurements/type)","Instruments: BIOTRACK Radiotags, Yagi Antenna, Telonics Receiver
+
+Procedure: checking the location of radiotagged Bank Voles in a fixed time schedule",,Other,,no,no,yes,no,Small mammal radiotracking,Structured data,Spatial,Spatial,,,,,,,,,,,
+4000,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,Inventory sampling in concentric sample circles in a 200m grid.,Forest inventory instructions (Westerwald).,,,Other,,no,yes,yes,no,,Structured data,Spatial,Spatial,,,,,,,,,,,
+4001,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,Coarse woody debris inventory in the Westerwald.,Forest inventory instructions (Westerwald).,,,Other,,no,yes,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+4002,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,"Stichprobeninventur in konzentrischen Probekreisen im 200m-Raster
+
+(Note: former name of the section was measurements/theory)",-,Instruments: Vertex-III,none,Ecological process - Herbivory,,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,forest inventory,,,,,
+4140,Botany (core),VIP,yes,yes,yes,735,148,74,27,Plants,no,no,no,"Estimation of bryophyte diversity in grassland by recording of species per plot
+
+(Note: former name of the section was measurements/theory)","recording of species and their abundance on core area (4m x 4m)
+
+(Note: former name of the section was measurements/type)","Instruments: pencil & paper; determination literature; Bryotheca A.Kopsch/Potsdam
+
+Calibration: by eye
+
+Procedure: recording in field, afterwards determining of critical species in laboratory",,Other,,yes,no,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+4141,Botany (core),VIP,yes,yes,yes,1069,147,73,29,Plants,no,no,no,"Estimation of bryophyte diversity in forest by recording of species per plot.
+
+(Note: former name of the section was measurements/theory)","We recorded all moss and liverwort species and estimated for each species their abundance on core area (20m x 20m). We distinguished between 4 substrate layers: terricolous (on soil); lignicolous (on dead wood); corticolous (on bark) and saxicolous (on rock). Low abundant species with scarce cover get cover values of "" 0.5% "". 
+
+(Note: former name of the section was measurements/type)","Instruments: pencil & paper; determination literature; Bryotheca A.Kopsch/Potsdam
+
+Calibration: by eye
+
+Procedure: recording in field, afterwards determining of critical species in laboratory",,Other,,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+4146,Botany (core),,yes,yes,yes,0,0,0,0,,no,no,no,"Monitoring of the interaction  network between 11 thistle species, fungi and invertebrates was carried out on all thistle possessing grassland EPs. All plant damages were recorded and sorted to particular categories; invertebrates were caught by camera and determined as far as possible and further sorted to categories(herbivores, predators, parasites, and other).
+
+(Note: former name of the section was measurements/theory)","Presence/absence data for plant parasitic fungi, invertebrates and damage types were collected one-time for each occurring thistle species on each grassland EP in July 2008.
+
+(Note: former name of the section was measurements/type)","Instruments: pencil and paper; camera; eye
+
+Calibration: on determination literature
+
+Procedure: catching by camera",,Ecological process - Pollination,,yes,no,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+4160,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,"Auszählung per Mikroskop
+
+(Note: former name of the section was measurements/theory)",-,,k.A.,Other,,no,yes,yes,no,Stammscheiben,Structured data,Other,,,,,,Other,,,,,,
+4181,Structure,VIP,yes,yes,yes,50,50,25,11,Plants,no,no,yes,"Number of plot based repetitions (information from the old BExIS schema): 7
+
+
+
+The overall goal of this project STRUCTURE is to find correlation between gap variables calculated based on aerial image analysis for the whole EP and the biodiversity of understory plant species being present in each EP. The idea is that this floral biodiversity of each EP is the consequence of spatio-temporal succession processes that should be strongly dependent on the spatial structure and distribution of gaps because understory light is a major limiting resource in beech-dominated forests.
+
+(Note: former name of the section was measurements/theory)","To account for fine-scale variation in canopy cover, soil or micro-topography, we randomly spread seven 10 m × 10 m subplots within each EP. During the summer season in 2008, percentage cover data of understory plants (graminoids, herbs, ferns, and low shrubs [typically, up to a max. height of ~1.5 m at maturity]) have been recorded in steps of 1% for species coverage of 1-10% and steps of 5% for species coverage of 10-100%. Thus, we followed the sampling system of the main botany project (H. Baumbach, pers. comm.), which, in contrast to Braun-Blanquet data, has the advantage that data are readily usable for conventional multivariate analysis (Podani 2006).
+
+(Note: former name of the section was measurements/type)","Instruments: laser-based range finder (LEICA) and compass to record the position of each subplot
+
+Procedure: cover values judged by eye",Only vascular understory plant species are shown that could be identified to the species level.All species data have been standardized. This was done by dividing the recorded cover value of each species through the sum of all species cover values of a subplot. Note that this sum of all species cover values was sometimes greater than the “total plant cover” recorded for each subplot because species can have overlapped in layers within the recorded plant height of 1.5 m.,Other,,no,yes,yes,no,"forest structure, plant species diversity, spatial heterogeneity",Structured data,Habitat structure,,,,Habitat structure,,,STRUCTURE,the structure of gaps is most important in our project,,,,
+4220,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Bestimmung der Position, Höhe, BHD und Art jedes Baumes der Untersuchungsfläche
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: GPSVertex III und Transponder T3
+
+Calibration: DerbholzvolumenC-Vorrat BaumschichtBlattmasse",,Other,None,no,yes,yes,no,,Structured data,,,,,,,,Buchenausschluss,Waldinventur Kopfdaten,,,,
+4221,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Bestimmung der Position, Höhe, BHD und Art jedes Baumes der Untersuchungsfläche
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: GPS Vertex III und Transponder T3
+
+Calibration: Derbholzvolumen C-Vorrat Baumschicht Blattmasse",,Other,None,no,yes,yes,no,Buchenausschluss,Structured data,Spatial,Spatial,,,,,,Buchenausschluss,Waldinventur Daten,,,,
+4222,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Entnahme Boden und Auflageproben
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: Stechrahmen 20x20cm für AuflageStechzylinder (V=95 m³)
+
+Calibration: C-Konzentration der Auflage- und Bodenproben
+
+Procedure: Auflage: Schreddern (SM 2000, Retsch, Haan, Deutschland)und Mahlen: Kugelschwingmühle (MM 200, Retsch, Haan, Deutschland)Boden: sieben (1mm) per Hand, Mahlen: Kugelschwingmühle (MM 200, Retsch, Haan, Deutschland)CN-Analyse mittels trockener Verbrennung Auflage: vario-EL CN-Analyators (Elementar Analysesysteme GmbH, Hanau, Deutschland)Boden:varioMAX CN-Analysators (Elementar AnalysesystemeGmbH, Hanau, Deutschland)",,Other,None,no,yes,no,yes,Buchenausschluss,Structured data,Other,,,,,,Other,Buchenausschluss,Bodeninventur,,,,
+4223,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,"CN Analyse der Auflage
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: CN-Analyse mittels trockener Verbrennung: vario- EL CN-Analyators (Elementar Analysesysteme GmbH, Hanau, Deutschland)
+
+Calibration: CN-Konzentration der Auflage
+
+Procedure: Schreddern (SM 2000, Retsch, Haan, Deutschland) und Mahlen: Kugelschwingmühle (MM 200, Retsch, Haan, Deutschland); CN-Analyse mittels trockener Verbrennung: vario- EL CN-Analyators (Elementar Analysesysteme GmbH, Hanau, Deutschland)",,,,no,yes,yes,no,Buchenausschluss,Structured data,Other,,,,,,Other,Buchenausschluss,CN Analyse Auflage,,,,
+4224,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"CN-Analyse des Bodens
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: CN-Analyse mittels trockener Verbrennung: varioMAX CN-Analysators (Elementar Analysesysteme GmbH, Hanau, Deutschland)
+
+Calibration: CN-Konzentration des Bodens
+
+Procedure: sieben (1mm) per Hand, Mahlen: Kugelschwingmühle (MM 200, Retsch, Haan, Deutschland); CN-Analyse mittels trockener Verbrennung: varioMAX CN-Analysators (Elementar Analysesysteme GmbH, Hanau, Deutschland)",,,None,no,yes,no,yes,Buchenausschluss,Structured data,Soil,,Soil,,,,,Buchenausschluss,CN Analyse Boden,,,,
+4225,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,"CN Analyse Streu Baumarten
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: CN-Analyse mittels trockener Verbrennung Auflage: vario- EL CN-Analyators (Elementar Analysesysteme GmbH, Hanau
+
+Calibration: CN Analyse Streu Baumarten
+
+Procedure: Schreddern (SM 2000, Retsch, Haan, Deutschland) und Mahlen: Kugelschwingmühle (MM 200, Retsch, Haan, Deutschland); CN-Analyse mittels trockener Verbrennung: vario- EL CN-Analyators (Elementar Analysesysteme GmbH, Hanau, Deutschland)",,Other,,no,yes,no,yes,Buchenausschluss,Structured data,Other,,,,,,Other,Buchenausschluss,CN Analyse Streu Baumarten,,,,
+4226,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Extraktion mittels Dithionit-Bicarbonat- Gemisch nach Mehra & Jackson (1960)undExtraktion mittels saurer Aluminiumoxalat-Lösung unter Lichtausschluss nach McKeage & Day (1966)
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: Atomspektroskopie (Inductively-Coupled Plasma Atomic Emission Spectrometer, (ICP-AES), Optima 3300 DV, Perkin-Elmer)
+
+Calibration: Fe- und Al- Konzentration im Boden",,Biogeochemical cycle - Other nutrients,None,no,yes,no,yes,Buchenausschluss,Structured data,Other,,,,,,Other,Buchenausschluss,Bestimmung der Eisen- und Aluminiumoxide des Bodens,,,,
+4260,Botany (core),VIP,yes,yes,yes,1073,149,74,29,Plants,no,no,no,"Traits for each plot
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: BRYOATT
+
+Calibration: mean values and sums per plot
+
+Procedure: based on presence - absence data of bryophyte species recorded on core area (20mx20m)",,Other,,no,yes,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+4300,Invertebrates II abo,,yes,yes,yes,0,0,0,0,Plants,no,no,no,"Pollen was collected from March to September 2007 in the surroundings of Würzburg and Münsingen (Southern Germany). The selection of plants included several species which are known to be visited by oligolectic bees (Westrich 1990). Pollen was collected either directly in the field, or from collected plants kept in vases until anthers had opened or pollen had accumulated in the flower. For each sample, pollen from 2-400 flowers was pooled. Each pollen sample was controlled for contaminations with non pollen particles under a binocular microscope in the laboratory and then the sample was frozen until it was prepared for analysis by storing it in the cabinet dryer over night at 30 °C.Free and protein-bound amino acids were measured separately with an ion exchange chromatograph (Biotronik, amino acid analyser LC 3000).'bgc:type : 'Data on qualitative and quantitative pollen amino acid composition will be presented in a table containing approximately 100 plant species collected in 2007.
+
+(Note: former name of the section was measurements/theory)","Data on qualitative and quantitative pollen amino acid composition will be presented in a table containing approximately 100 plant species collected in 2007.
+
+(Note: former name of the section was measurements/type)","Instruments: Eppendorf cups,Biotronik, amino acid analyser LC 3000
+
+Calibration: Calibration with standards (amino acid solutions of known concentration)
+
+Procedure: For analysis of water soluble amino acids 3-5 mg (dry weight) pollen was extracted with 100 µl water for 30 min in the refrigerator. After centrifugation (15 000 g) and membrane filtration for 10 min, the ground tissue was saved for later analysis of the amino acids of the protein fraction. The supernatant was filled into a new E-cup, boiled for 2 min at 100 °C and cooled in ice to room temperature before a second centrifugation for 5 min. Afterwards 50 µl of the supernatant was extracted with 10 µl 12.5% 5-Sulfosalicylic acid in the refrigerator for 30 min for precipitation of proteins. 10 min of centrifugation followed and 50 µl of the supernatant plus 50 µl thinning buffer were filled into a fresh E-cup, mixed and pipetted in a membrane filter (Vecta Spin) before a last centrifugation for 5 min and adjacent measurement in the amino acid analyser.For analysis of the amino acids of the protein fraction 200 µl 6 N HCl3 were added to the ground tissue, the sample was mixed, boiled for four hours at 100 °C and cooled to room temperature in ice. 10 min of centrifugation followed. The supernatant was filled into a new E-cup and evaporated at 100 °C. Afterwards the sample was re-dissolved in 200 µl of water, immediately cooled to room temperature in ice and centrifugated again (10 min.). Subsequently 100 µl of the supernant were mixed with 20 µl 12.5% sulphosalicylic acid and extracted 30 minutes in the refrigeretor before short mixing and centrifugation for another 10 minutes followed. 100 µl of the supernant and 100 µl sample rarefaction buffer was transfered into a new E-cup. Then all is pipetted through a membrane filter (Vecta Spin), centrifugated for 5 minutes and transfered into a new E-cup for futher rarefaction with sample rarefaction buffer (1:5).",,Other,,yes,no,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+4302,Invertebrates II abo,VIP,yes,yes,yes,39,39,21,8,Animals - Invertebrates,no,no,no,"Between May and August we studied the 50 experimental grassland plots in each exploratory, sampling different land use types simultaneously. Some plots were sampled repeatedly over the year. All momentarily flowering plant species, an independent estimate of the total number of flower units per species, and all flower visitor-plant interactions  were be recorded on a 200 m transect around each plot which was sampled for six hours. A ‘flower unit’ is defined as a unit of one or more flowers demanding insects to fly from one unit to another. Insects were caught with a dip net or with help of an exhauster. Only insects sitting directly in the centre of the flowers seeming to feed on pollen or nectar were caught. Insects sitting on the petals are not taken into consideration.
+
+(Note: former name of the section was measurements/theory)","plant-butterfly interaction matrix: plant species and number of interactions between insect and plant species; the matrix can contain up to 160 rows and 100 columns, usually fewer. Plant and pollinator species  will vary across different networks. Each cell shows the number of individuals of an insect species on a certain flower species; independent flower data are collected before starting sampling; abiotic environmental factors are measured as well.
+
+(Note: former name of the section was measurements/type)","Instruments: dip net, exhauster, vials/Eppendorf tubes; weather station: TechnoLine WS 2300",none,Ecological process - Pollination,,yes,no,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+4341,ProFIL,VIP,yes,yes,yes,57,57,57,57,Microbes,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 3cells are fixed with 2% Glutardialdehyde directly after soil collection and stained in the lab with SYBRGreenI a nucleic acid stain. The cells are than counted with a fluorescent microscop and a net-micrometer.
+
+(Note: former name of the section was measurements/theory)","cell count
+
+(Note: former name of the section was measurements/type)","Instruments: Fluoprecent Microscop (Zeiss)
+
+Calibration: internal standard
+
+Procedure: cells on black PC filters on glass slides are obseved using a 100x objective",,Other,,yes,yes,no,yes,,Structured data,Other,,,,,,Other,,,,,,
+4360,Vertebrates II (core),,yes,yes,yes,0,0,0,0,Animals - Vertebrates,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 3Observing location data via accoustic signal from a radiotag recieved by Yagi Antenna and Telonics Receiver.
+
+(Note: former name of the section was measurements/theory)","location data with easting and northing in meters from a fixed reference point (trapping grid)
+
+(Note: former name of the section was measurements/type)","Instruments: BIOTRACK Radiotags, Yagi Antenna, Telonics Receiver
+
+Procedure: checking the location of radiotagged Bank Voles in a fixed time schedule",,Other,,no,no,yes,no,Small mammal radiotracking,Structured data,Spatial,Spatial,,,,,,,,,,,
+4361,Vertebrates II (core),,yes,yes,yes,0,0,0,0,Animals - Vertebrates,no,no,no,"Trapping with live traps, meaning that each individual is handled and left again. Recapture is possible due to marking the animals with earpunch at first trapping.","Animals are taken out of the trap before handling, they are marked by earpunch, body conditions are measured, they are searched for parasites, and left free again, selected animals are equipped with radiotag, after radiotracking the tags are removed by cutting the collar (cable tie).","multiple live capture traps ""Ugglan-Type2"", Pesola spring scale 100g, Earpunch ""F.S.T""",,Other,,no,no,yes,no,Small mammal trapping,Structured data,Other,,,,,,Other,,,,,,
+4420,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,"Schumacher, F. X., 1939: A new growth curve and ist application to timber yield studies. J. of Forestry  37: 819-820. 
+
+(Note: former name of the section was measurements/theory)","## log(H) = a0 + a1/BHDnatürlicher LogarithmusBHD in cmKronenansatz und Baumhöhe in m
+
+(Note: former name of the section was measurements/type)","Instruments: Vertex-IIIUmfangmaßband
+
+Calibration: Standard
+
+Procedure: Baumhöhen- und Kronenansatz sowie BHD Messungen in Rahmen der ersten Waldinventur",k.A.,Other,,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+4442,Botany (core),VIP,yes,yes,yes,30,30,30,29,Plants,no,no,no,"lichen and bryophyte communities differ between tree base and crown in composition and functional traits
+
+(Note: former name of the section was measurements/theory)","species lists with abundance
+
+(Note: former name of the section was measurements/type)","Instruments: tlc, tree climbing equipment
+
+Calibration: Culberson, C. F. & Ammann, K. (1979): Standardmethode zur Dünnschichtchromatographie von Flechtensubstanzen. – Herzogia 5: 1-24.Ellenberg valuesLichen traits according to Stofer et al. 2006, Lichenologist  38,  4:  331-353.
+
+Procedure: determination of taxa by secondary lichen compounds",,Other,,no,yes,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+4444,Botany (core),VIP,yes,yes,yes,1287,80,43,16,Plants,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 6vegetation records on 4 x 4 m  in grasslands  taken in the core area of each plot. 
+
+(Note: former name of the section was measurements/theory)","vegetation records with species abundances in percent; matrix data contains estimated abundance in % of coverage
+
+(Note: former name of the section was measurements/type)","Instruments: paper and pencil
+
+Calibration: by eye
+
+Procedure: recording of species and species abundance. some plots were visited in 2008 because the plot set up was not ready in 2007",,Other,,yes,no,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+4446,Botany (core),,yes,yes,yes,0,0,0,0,Plants,yes,no,no,"Some secondary lichen compounds serve as herbivory defense.
+
+(Note: former name of the section was measurements/theory)","Lichen mass eaten by snails
+
+(Note: former name of the section was measurements/type)","Instruments: scale
+
+Procedure: untreated lichen pieces: lichen pieces air dried, stored for three days at 35°C in the drying oven, then weighted.treated lichen pieces:lichen pieces air dried, acetone rinsed (four times for 20 minutes), stored for three days at 35°C in the drying oven, then weighted.",,Ecological process - Herbivory,,no,no,yes,no,,Structured data,Other,,,,,,Other,,,,,,
+4460,Botany (core),VIP,yes,yes,yes,647,140,71,29,Plants,no,no,no,"Recorded lichens in all 631 plots. Lichens were recorded on 20 m×20 m (in the center of each plot and concentric with the forest inventory circle). All lichen species per plot were identified and lichens were also recorded separately for each of the four substrate categories: bark (corticolous species, up to 2.5 m height on tree trunks and branches of shrubs), rocks (saxicolous species), deadwood (lignicolous species), and soil (terricolous species),
+see paper: Boch S., Prati D., Hessenmöller D., Schulze E.-D., Fischer M. (2013): Richness of Lichen Species, Especially of Threatened Ones, Is Promoted by Management Methods Furthering Stand Continuity. PLoS ONE 8(1): e55461. doi:10.1371/journal.pone.0055461
+
+(Note: former name of the section was measurements/theory)",-,,,Other,,no,yes,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+4520,ChemoDiversity,VIP,yes,yes,yes,79,79,43,11,Plants,no,yes,yes,"Number of time based repetitions (information from the old BExIS schema): 8
+
+Number of plot based repetitions (information from the old BExIS schema): 3
+
+
+
+The aim was to elucidate the effect of the surrounding vegetation complexity and host plant parameters on a tritrophic system.
+Vegetation complexity is defined as vegetation structure and plant species richness in the surrounding of a focus host plant.
+
+
+(Note: former name of the section was measurements/theory)","To do this we recorded vegetation structure and forbal plant species richness around a focus plant as well as host plant parameters of ten P. lanceolata  individuals per plot in early summer 2008 (29.5.-6.8.08).
+Data on individual plant level in late summer are found in 4521, averaged data per plot in early summer are found in 10840.
+
+(Note: former name of the section was measurements/type)","Instruments: Vegetation structure was defined by height (maximum height of forbs or grass) and density (weighted mean vegetation height). 
+Host plant parameters were recorded either by counting or with a folding rule.
+
+
+Calibration: Radius with 15 cm diameter was used to estimate vegetation structure and plant species richness around the host plant. Radius with 1m diameter was used to count host plant abundance in further surrounding.
+
+Procedure: Vegetation structure was quantified by estimating the horizontal cover of the vegetation (%). It was assessed in 10-cm steps from 0 up to 1.70 m using a white board as background (Sundermaier, 1999). We calculated the weighted mean and measured the maximum vegetation height (cm) around the randomly chosen host plants (r = 15 cm) per plot.
+Following host plant parameter were recorded: number of stalks, maximum height of stalks, maximum height of rosette, diameter of rosette, number of fully developed leaves, herbivory damage.
+Plots that could not be sampled indicated by ""NA""(e.g. cattle on plot).",none,,,yes,no,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+4521,ChemoDiversity,VIP,yes,yes,yes,55,55,29,8,Plants,no,yes,yes,"Number of time based repetitions (information from the old BExIS schema): 8
+
+Number of plot based repetitions (information from the old BExIS schema): 3
+
+
+
+The aim was to elucidate the effect of the surrounding vegetation complexity and host plant parameters on a tritrophic system.
+Vegetation complexity is defined as vegetation structure and plant species richness in the surrounding of a focus host plant.
+
+
+(Note: former name of the section was measurements/theory)","To do this we recorded vegetation structure (and forbal plant species richness) around a focus plant as well as host plant parameters of ten P. lanceolata  individuals per plot in late summer 2008 after mowing (11.7.-2.9.08). Data on individual plant level in early summer are found in 4520, averaged data per plot in early summer are found in 10840.
+
+(Note: former name of the section was measurements/type)","Instruments: Vegetation structure was defined by height (maximum height of forbs or grass) and density (weighted mean vegetation height). 
+Host plant parameters were recorded either by counting or with a folding rule.
+
+
+Calibration: Radius with 15 cm diameter was used to estimate vegetation structure and plant species richness around the host plant. Host plant abundance on the plot was recorded by counting individuals along the whole transect of the plot.
+
+
+
+Procedure: Vegetation structure was quantified by estimating the horizontal cover of the vegetation (%). It was assessed in 10-cm steps from 0 up to 1.70 m using a white board as background (Sundermaier, 1999). We calculated the weighted mean and measured the maximum vegetation height (cm) around the randomly chosen host plants (r = 15 cm) per plot.
+Host plant abundance was recorded by counting the individuals along the transect of the plot.
+Plant species richness (calculated by counting forb species) was only recorded in Schorfheide and only twice per plot; values not measured was indicated by ""NA"".
+Following host plant parameter were recorded: number of stalks, maximum height of stalks, maximum height of rosette, diameter of rosette, number of fully developed leaves, herbivory damage.
+Plots that could not be sampled indicated by ""NA""(e.g. cattle on plot).",none,,,yes,no,yes,no,,Structured data,Habitat structure,,,,Habitat structure,,,,,,,,
+4620,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"Informationen zu den Bäumen im Footprint des Turms im Nationalpark Hainich; vormals Projekt CarboEurope
+
+(Note: former name of the section was measurements/theory)",-,"Instruments: Die Bäume wurden mit EigenbauDendrometern ausgestattet.Modell ""Waldemar""zusätzlich mit Funkmodul zur Datenübertragung
+
+Calibration: durch Waldemar Ziegler
+
+Procedure: Eigenkonstruktion",k.A.,Other,None,no,yes,yes,no,Dendrometer,Structured data,Other,,,,,,Other,,,,,,
+4621,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,,-,,k.A.,Other,None,no,yes,yes,no,Dendrometer,Structured data,Other,,,,,,Other,,,,,,
+4622,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,,-,"Instruments: Kalibrierung erfolgte durch die Fa. Ecomatik, keine Angabe über technische Details",k.A.,Other,None,no,yes,yes,no,Dendrometer,Structured data,Other,,,,,,Other,,,,,,
+4623,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,,-,,k.A.,Other,None,no,yes,yes,no,Dendrometer,Structured data,Other,,,,,,Other,,,,,,
+4641,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,,-,,k.A.,Other,None,no,yes,yes,no,Dendrometer,Structured data,Other,,,,,,Other,,,,,,
+4661,BExIS (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,,-,Instruments: DC2-Dendrometer und Typ Waldemar,k.A.,Other,Demographic,no,yes,yes,no,Dendrometer,Structured data,Other,,,,,,Other,,,,,,
+4760,Soil (biotic) V,VIP,yes,yes,yes,57,57,57,57,None,no,no,no,"Soil samples were distributed to more than 20 working groups to achieve that as much parameter as possible will be measured at the ""same soil sample"" with different techniques.
+
+(Note: former name of the section was measurements/theory)","All given soil properties like horizon thickness, mottling, cutans, concretions, root content, etc. were described according to the Guidelines for soil description (FAO, 2006). Soil type was classified according to the World Reference Base for Soil Resources (IUSS Working Group WRB, 2006). Soil texture was classified according to the Bodenkundliche Kartieranleitung. All parameters are given in acronyms according to the respective guideline.
+
+(Note: former name of the section was measurements/type)","Instruments: 20x20 cm and 40x40 cm frame, motor driven auger with a diameter of 8.3 cm (Eijkelkamp, Giesbeek, Netherlands), Split Tube sampler
+
+Procedure: At each individual plot, soil was sampled from 5 points in a 20x20 m area. At all forest sites, organic layers were sampled with a 20x20 cm or a 40x40 cm frame. The organic layers were also described according to Guidelines for soil description (FAO, 2006). At all grassland sites, the sward was cut off before sampling the mineral soil. The mineral soils were sampled down to the parent material using a motor driven auger. The organic soils of the grassland plots in the Schorfheide were sampled with a Split-Tube sampler.",na,Other,None,yes,yes,yes,yes,soil survey,Structured data,,,,,,,,,,,,,
+4761,Soil (biotic) V,VIP,yes,yes,yes,57,57,57,57,None,no,no,no,"Soil samples were distributed to more than 20 working groups to achieve that as much parameter as possible will be measured at the ""same soil sample"" with different techniques.
+
+(Note: former name of the section was measurements/theory)","All given soil properties like horizon thickness, mottling, cutans, concretions, root content, etc. were described according to the Guidelines for soil description (FAO, 2006). Soil type was classified according to the World Reference Base for Soil Resources (IUSS Working Group WRB, 2006). Soil texture was classified according to the Bodenkundliche Kartieranleitung. All parameters are given in acronyms according to the respective guideline.
+
+(Note: former name of the section was measurements/type)","Instruments: 20x20 cm and 40x40 cm frame, motor driven auger with a diameter of 8.3 cm (Eijkelkamp, Giesbeek, Netherlands), Split Tube sampler
+
+Procedure: At each individual plot, soil was sampled from 5 points in a 20x20 m area. At all forest sites, organic layers were sampled with a 20x20 cm or a 40x40 cm frame. The organic layers were also described according to Guidelines for soil description (FAO, 2006). At all grassland sites, the sward was cut off before sampling the mineral soil. The mineral soils were sampled down to the parent material using a motor driven auger. The organic soils of the grassland plots in the Schorfheide were sampled with a Split-Tube sampler.",na,Other,None,yes,yes,yes,yes,soil survey,Structured data,,,,,,,,,,,,,
+4762,Soil (biotic) V,,yes,yes,yes,0,0,0,0,None,no,no,no,"Soil samples were distributed to more than 20 working groups to achieve that as much parameter as possible will be measured at the ""same soil sample"" with different techniques.
+
+(Note: former name of the section was measurements/theory)","All given soil properties like horizon thickness, mottling, cutans, concretions, root content, etc. were described according to the Guidelines for soil description (FAO, 2006). Soil type was classified according to the World Reference Base for Soil Resources (IUSS Working Group WRB, 2006). Soil texture was classified according to the Bodenkundliche Kartieranleitung. All parameters are given in acronyms according to the respective guideline.
+
+(Note: former name of the section was measurements/type)","Instruments: 20x20 cm and 40x40 cm frame, motor driven auger with a diameter of 8.3 cm (Eijkelkamp, Giesbeek, Netherlands), Split Tube sampler
+
+Procedure: At each individual plot, soil was sampled from 5 points in a 20x20 m area. At all forest sites, organic layers were sampled with a 20x20 cm or a 40x40 cm frame. The organic layers were also described according to Guidelines for soil description (FAO, 2006). At all grassland sites, the sward was cut off before sampling the mineral soil. The mineral soils were sampled down to the parent material using a motor driven auger. The organic soils of the grassland plots in the Schorfheide were sampled with a Split-Tube sampler.",na,Other,None,yes,yes,no,yes,soil survey,Structured data,Soil,,Soil,,,,,,,,,,
+4781,Forest (core),,yes,yes,yes,0,0,0,0,Plants,no,no,no,,-,,x,Other,Multiple species,no,yes,yes,no,x,Structured data,Other,,,,,,Other,x,x,,,,
+4823,FUNWOOD I,VIP,yes,yes,yes,30,30,29,29,,no,no,no,"Auswahl, Einmessen und Beschreibung der im Projekt FunWoodI verwendeten liegenden Totholzstämme und des umgebenden Bestands
+
+(Note: former name of the section was measurements/theory)","Einmessung und Beschreibung des ausgewählten Totholzes (ausschließlich Fagus sylvatica, Picea abies, Pinus sylvestris) 
+
+(Note: former name of the section was measurements/type)","Instruments: Kompass, Vertex, Kluppe, Taschenmesser (10 cm Klingenlänge)
+
+Procedure: Markierung des Totholzes mit Metallplaketten (eingestanzte Nummern), Einmessen zu Bezugspunkt auf Plot, Beschreibung des Totholzes und des umgebenden Bestands",nein,Decomposition,,no,yes,yes,no,"FunWood, Totholz, Basisdaten",Structured data,,,,,,,,,,,,,
+4840,LMT (core),VIP,yes,yes,yes,50,50,25,9,None,no,yes,no,,"Trend: Bei der Erhebung der Landnutzungsart- und Intensität 2006 (Methode: Interview, Zeitraum: August bis Dezember 2007) der Grünlandflächen wurden u.a. die unterschiedlichen Arten der Beweidung, der Mahd sowie der Pflegemaßnahmen (Düngung, Einsaat, Bodenbearbeitung, etc.) befragt. Ausgehend von diesen Angaben werden folgendermaßen potenzielle Zeiträume für einen „Bewirtschaftungstrend 2008“ abgeleitet:Mahdtermin: Angegebener Zeitraum plus eine Woche vor, plus eine Woche nach TerminBeweidung: Angegebener Zeitraum 2006: innerhalb des Zeitraums findet generell Weidung statt, ja nach Methode kann die Anzahl der Weidegänge mit jeweiliger Verweildauer variieren.Pflege: Angegebener Zeitraum 2006: plus eine Woche vor, plus eine Woche nach TerminNachsaat: Angegebener Zeitraum 2006: plus eine Woche vor, plus eine Woche nach TerminDüngung: Angegebener Zeitraum 2006 : plus eine Woche vor, plus eine Woche nach TerminDie Angabe „Frühling“ ist in den Zeitraum KW 10-KW18 übertragen.",,,Other,None,yes,no,yes,no,Management,Structured data,Land use,,,Land use,,,,KW,Kalenderwoche,,,,
+4862,Forest (core),,yes,yes,yes,0,0,0,0,None,no,no,no,,-,,,Other,None,no,yes,yes,no,dendrometer,Structured data,Other,,,,,,Other,dendrometer,,,,,
+4882,Invertebrates II abo,EP,yes,yes,yes,19,1,0,0,Plants,no,no,no,"Between May and August we studied a total of 40 sites, sampling one extensively and one intensively used meadow simultaneously (pair-wise design). Ten pairs were sampled before the first mowing and ten pairs approximately 1-2 months afterwards. An extensively used meadow (EM) was defined as mown once a year and not or only weakly fertilized. An intensively used meadow (IG) was defined as fertilized and mown two or more times a year. All momentarily flowering plant species were identified and the total number of flower units per species was estimated on 1000 m² per site as a measure of flower availability. A ‘flower unit’ was defined as a unit of one or more flowers demanding insects to fly from one unit to another.
+
+(Note: former name of the section was measurements/theory)","The table contains Plot Id, Date, land use type, time of sampling,  Plant species and number of flower units. The table contains 824 rows and 6 columns. Plant species vary between different networks
+
+(Note: former name of the section was measurements/type)",,none,Other,,yes,no,yes,no,metadata structure,Structured data,Other,,,,,,Other,,,,,,
+4883,Invertebrates II abo,EP,yes,yes,yes,19,1,0,0,,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 3
+Between May and August we studied a total of 40 sites, sampling one extensively and one intensively used meadow simultaneously (pair-wise design). Ten pairs were sampled before the first mowing and ten pairs approximately 1-2 months afterwards.All momentarily flowering plant species, an independent estimate of the total number of flower units per species, and all flower visitor-plant interactions during six hours were recorded on 1000 m² per site. A ‘flower unit’ was defined as a unit of one or more flowers demanding insects to fly from one unit to another. Insects were caught with a dip net or with help of an exhauster. Only insects sitting directly in the centre of the flowers seeming to feed on pollen or nectar were caught. Insects sitting on the petals were not taken into consideration.
+
+(Note: former name of the section was measurements/theory)","The table contains: interactions between insect and plant species; the table contains 11 columns: Plot.ID, plant species, date, sample number = No, order = insect order, family = insect family, species = insect species, female, male, unsexed = sex was not determined, Total = the sum of male, female and unsexed individuals.Plant and pollinator species and orders will vary across different networks. Independent flower data are collected before starting sampling (see: ""flower availability 2007 Schwäbische Alb""); abiotic environmental factors will be available in future.
+
+(Note: former name of the section was measurements/type)","Instruments: dip net, exhauster, vials/Eppendorf tubes;weather station: TechnoLine WS 2300",,Ecological process - Pollination,,yes,no,yes,no,,Structured data,Other,,,,,,Other,BERC,Biodiversity Exploratory research consortium,,,,
+4963,Invertebrates II abo,VIP,yes,yes,yes,39,39,20,6,Plants,no,no,no,"Between April and September we studied nearly all grassland EPs, recording all momentarily flowering plant species and counting or estimating the number of flowering units per plant species. A ‘flower unit’ was defined as a unit of one or more flowers demanding insects to fly from one unit to another. 
+
+(Note: former name of the section was measurements/theory)","Plant species and number of flowering units per EP; each cell shows the number of flowering units of a certain flower species
+
+(Note: former name of the section was measurements/type)",,none,Other,,yes,no,yes,no,metadata structure,Structured data,Other,,,,,,Other,,,,,,
+4964,Invertebrates II abo,VIP,yes,yes,yes,41,41,21,8,Plants,no,no,no,"Between April and September we studied nearly all grassland EPs, recording all momentarily flowering plant species and counting or estimating the number of flowering units per plant species. A ‘flower unit’ was defined as a unit of one or more flowers demanding insects to fly from one unit to another. 
+
+(Note: former name of the section was measurements/theory)","Plant species and number of flowering units per EP; each cell shows the number of flowering units of a certain flower species
+
+(Note: former name of the section was measurements/type)",,none,Other,,yes,no,yes,no,metadata structure,Structured data,Other,,,,,,Other,,,,,,
+4981,Invertebrates II abo,VIP,yes,yes,yes,39,38,20,8,Plants,no,no,no,"Between April and September we studied nearly all grassland EPs, recording all momentarily flowering plant species and counting or estimating the number of flowering units per plant species. A ‘flower unit’ was defined as a unit of one or more flowers demanding insects to fly from one unit to another. 
+
+(Note: former name of the section was measurements/theory)","Plant species and number of flowering units per EP; each cell shows the number of flowering units of a certain flower species
+
+(Note: former name of the section was measurements/type)",,none,Other,,yes,no,yes,no,metadata structure,Structured data,Other,,,,,,Other,,,,,,
+5000,BExIS (core),,yes,yes,yes,0,0,0,0,None,no,no,no,"none; relies on template coordinates
+
+(Note: former name of the section was measurements/theory)","none; 
+
+(Note: former name of the section was measurements/type)","Instruments: Software: R
+
+Procedure: Simple R hack;",na,Other,None,no,no,no,no,,Model/Scripts,Other,,,,,,Other,,,,,,
+5021,BEAM I.II,,yes,yes,yes,0,0,0,0,Plants,no,no,no,"1)Life-history theory2)Seed ecology3)Landscape ecology
+
+(Note: former name of the section was measurements/theory)","Functional trait data that is used as input-data: seed mass, seed terminal velocity, seed release height, seed longevity, adult plant total biomass, juvenile plant total biomass, biomass of clonal reproduction units, seed number per plant, clone number per plant.
+
+(Note: former name of the section was measurements/type)",Instruments: There is no output data for this header file.,,Productivity,,yes,yes,yes,no,,Model/Scripts,Other,,,,,,Other,,,,,,
+5060,BEAM I.II,,yes,yes,yes,0,0,0,0,Plants,no,no,no,"1)Life-history theory 2)Seed ecology 3)Landscape ecology
+
+(Note: former name of the section was measurements/theory)","Functional trait data that is used as input-data: seed mass, seed terminal velocity, seed release height, seed longevity, adult plant total biomass, juvenile plant total biomass, biomass of clonal reproduction units, seed number per plant, clone number per plant.
+
+(Note: former name of the section was measurements/type)","Instruments: The strong ergodic theorem of matrix theory (Cohen 1979, Caswell 2001:79-94): For irreducible, primitive transition matrizes, the dominant eigenvalue and associated right and left eigenvectors provide the long-term growth rate, stable-stage distribution and reproductive values.",,Productivity,,yes,yes,yes,no,,Model/Scripts,Other,,,,,,Other,,,,,,
+5063,BEAM I.II,,yes,yes,yes,0,0,0,0,Plants,no,no,no,"1)Life-history theory
+2)Seed ecology
+3)Landscape ecology
+
+(Note: former name of the section was measurements/theory)","Functional trait data that is used as input-data: seed mass, seed terminal velocity, seed release height, seed longevity, adult plant total biomass, juvenile plant total biomass, biomass of clonal reproduction units, seed number per plant, clone number per plant.
+
+The folling variables are included in the model.
+The list includes variable name | unit | variable description:
+
+1. | SpecNr | no unit | species identifier
+2. | SeedMortality | per capita and year demographic   rate | mortality/ year
+3. | SeedDispRatio | ratio (between 0 and 1) | ratio of seeds leaving local   population
+4. | p01 | per capita and year demographic   rate | seed germination probability
+5. | pveg | ratio of biomass allocation to   clonal reproduction | clonality
+6. | ptbveg | g | biomass of clones
+7. | ptb0 | g | seed biomass
+8. | ptb2 | g | juvenile biomass
+9. | ptb1 | g | adult biomass
+10. | p22 | per capita and year demographic   rate | adult survival probability
+11. | LogLambda | log(individuals/year) | natural logarithm of the   geometric mean population growth rate for a stochastic time series
+12. | VarianceLogLambda | log(individuals/year) | variance of the natural   logarithm of the geometric mean population growth rate for a stochastic time   series
+13. | MeanSeedNumber | count | arithmetic mean of seed number   for a stochastic time series
+14. | MeanCloneNumber | count | arithmetic mean of clone number   for a stochastic time series
+
+
+
+(Note: former name of the section was measurements/type)","Instruments: The geometric mean is used to assess growth rates for an independent and identically distributed (i.i.d.) sequence of environments. Compare Caswell (2001, Chapter 14).",,Productivity,,yes,yes,yes,no,,Model/Scripts,Land use,,,Land use,,,,,,,,,
+5081,ProFIL,VIP,yes,yes,yes,57,57,57,57,Microbes,no,yes,no,"Number of time based repetitions (information from the old BExIS schema): 3cells are fixed with 2% Glutardialdehyde directly after soil collection and stained in the lab with SYBRGreenI a nucleic acid stain. The cells are than counted with a fluorescent microscop and a net-micrometer.
+
+(Note: former name of the section was measurements/theory)","cell count
+
+(Note: former name of the section was measurements/type)","Instruments: Fluoprecent Microscop (Zeiss)
+
+Calibration: internal standard
+
+Procedure: cells on black PC filters on glass slides are obseved using a 100x objective",,Other,,yes,yes,no,yes,,Structured data,Other,,,,,,Other,,,,,,
+5120,LMT (core),VIP,yes,yes,yes,1500,152,75,27,None,no,no,no,"members of the local implementation teams of the central project carried out a survey for the year 2006 applying a standard questionnaire developed by the teams
+
+(Note: former name of the section was measurements/theory)","survey
+
+(Note: former name of the section was measurements/type)",Procedure: interview of land owners / land users of grassland EPs and GPs,none,Other,None,yes,no,yes,no,,Structured data,Land use,,,Land use,,,,-1,data not available,,,,
+5160,INDILAP,VIP,yes,yes,yes,9,9,9,9,Microbes,no,no,no,"Therefore the soil of three different landuse intensities was analysed. The pH-value, the ammonia and nitrate concentration, the dissolved organic carbon, the dissolved nitrogen and the potential nitrification and denitrification in soils were measured. in addion the abundace of rhe genes nirK nirS, nifH,amoA AOA and amoA AOB was quatified.
+
+(Note: former name of the section was measurements/theory)","-pH-value measurement in CaCl2;-ammonia and nitrate measurement in CaCl2-extraction (photometer: nanocolor 300D, Firma: Macherey-Nagel GmbH und Co KG, Kits:Nanocolor Ammonium3 und Nanocolor Nitart50)-DOC + TNb-pot. nitrification (modiefied Ranjard et al.2000)-pot. denitrification (modiefied Tiedje et al.1979)-qPCR 
+
+(Note: former name of the section was measurements/type)","Instruments: -pH-Meter (CG836,Schott)-Photometer (Nanocolor300D, Macherey-Nagel)- TOC-analyser (with TNb-module) (DIMATEC,Analysetechnik, Deutschland)-Plattenspectrophotometer, spectraMax, MWG BIOTECH)-GC-DNA-extraction (FastDNA SPIN Kit for soil, Bio101)-UV-Vis Spectrophotometer, NanoDrop Technologies-Applied Biosystems 7300 Fast Real-Time PCR System",,,,yes,no,no,yes,nitrogen cycle,Structured data,Soil,,Soil,,,,,ALB,Schwaebische Alb,,,,
+5201,Soil abiotic (core),VIP,yes,yes,yes,30,30,30,30,None,no,no,no,"Soil respiration, soil temperature at 5 and 10 cm and soil moisture at 0-8 cm was measured simultaneously at each point some days before the soil cores were taken.Basal respiration was measured in the lab at fixed temperature (22degC) and moisture conditions.
+
+(Note: former name of the section was measurements/theory)","Field and forest soil respiration is given in µmol of CO2 per sqaure meter per second. Basal respiration in µgram CO2-C per hour per gram of dry soil. Temperature in celcius. Moisture in % of volume.
+
+(Note: former name of the section was measurements/type)","Instruments: Licor 6400 soil respiration chamber.
+
+Calibration: Licor 6400 calibration performed yearly against reference CO2 concentrations.
+
+Procedure: At each individual plot, soil respiration, temperature and moisture was measured from 5 points (on pre-installed 10cm diameter collars) in a 20x20 m area. Inside each collar, above ground vegetation was clipped and removed before measuring.",na,Biogeochemical cycle - Carbon,None,yes,yes,no,yes,,Structured data,Climate,,,,,Climate,,,,,,,
+5222,Soil abiotic (core),VIP,yes,yes,yes,57,57,57,57,None,no,no,no,"Soil respiration, soil temperature at 5 and 10 cm and soil moisture at 0-8 cm was measured simultaneously at each point some days before the soil cores were taken.
+
+(Note: former name of the section was measurements/theory)","Field and forest soil respiration is given in µmol of CO2 per sqaure meter per second. Temperature in celcius. Moisture in % of volume.
+
+(Note: former name of the section was measurements/type)","Instruments: Licor 6400 soil respiration chamber.
+
+Calibration: Licor 6400 calibration performed yearly against reference CO2 concentrations.
+
+Procedure: At each individual plot, soil respiration, temperature and moisture was measured from 5 points (on pre-installed 10cm diameter collars) in a 20x20 m area. Inside each collar, above ground vegetation was clipped and removed before measuring.",na,Biogeochemical cycle - Carbon,None,yes,yes,no,yes,,Structured data,Climate,,,,,Climate,,,,,,,
+5241,DYNPHOS,VIP,yes,yes,yes,244,244,128,47,None,no,no,no,"Determination of the different P fractions in soil
+
+(Note: former name of the section was measurements/theory)","Sequential extraction by Hedley et al.(1982) and Kuo (1996). 
+
+(Note: former name of the section was measurements/type)",Instruments: Continuous Flow Analyzer (Fa. Bran+Luebbe),,Biogeochemical cycle - Other nutrients,None,yes,yes,no,yes,P fractions; Phosphorus,Structured data,Soil,,Soil,,,,,,,,,,
