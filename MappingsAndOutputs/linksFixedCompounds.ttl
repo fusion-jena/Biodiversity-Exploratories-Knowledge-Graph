@@ -1,0 +1,183 @@
+@prefix rr:   <http://www.w3.org/ns/r2rml#> .
+@prefix ex: <http://example.com/base/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix obi: <http://purl.obolibrary.org/obo/OBI/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ncit: <http://purl.obolibrary.org/obo/NCIT_> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix envo: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix ro: <https://www.ebi.ac.uk/ols4/ontologies/ro> .
+@prefix envthes: <https://vocabs.lter-europe.net/EnvThes/> .
+@prefix iao: <http://purl.obolibrary.org/obo/iao.owl> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pco: <http://purl.obolibrary.org/obo/PCO_> .
+@prefix ncbi: <https://www.ncbi.nlm.nih.gov/> .
+@prefix agro: <http://purl.obolibrary.org/obo/agro.owl> .
+@prefix schema: <http://schema.org/> .
+@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/#> .
+@prefix vivo: <http://vivoweb.org/ontology/core> .
+@prefix efo: <http://www.ebi.ac.uk/efo/efo.owl> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat> .
+@prefix metpo: <https://w3id.org/metpo/metpo.owl> .
+@prefix inrae: <http://opendata.inrae.fr/thesaurusINRAE/thesaurusINRAE> .
+@prefix cito: <http://purl.org/spar/cito> .
+@prefix opmi: <http://purl.obolibrary.org/obo/opmi.owl> .
+@prefix stato: <http://purl.obolibrary.org/obo/stato.owl> .
+@prefix omo: <http://purl.obolibrary.org/obo/omo.owl> .
+@prefix addicto: <http://addictovocab.org/addicto.owl> .
+@prefix semunit: <http://example.com/base/semanticunits/> .
+
+<#LinkStatementUnit>
+  a rr:TriplesMap ;
+  rr:logicalTable   [ rr:tableName "be_links" ] ;
+
+  # SU subject IRI *and* graph IRI are the same canonical pattern
+  rr:subjectMap [
+    rr:template "http://example.com/base/semunit/link/{links_source_types}_{links_source_ids}__{links_reference_types}__{links_target_types}_{links_target_ids}" ;
+    #rr:graphMap [
+    #  rr:template "http://example.com/base/semunit/link/{links_source_types}_{links_source_ids}__{links_reference_types}__{links_target_types}_{links_target_ids}"
+    #] ;
+  ] ;
+
+  # Types
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [ rr:constant semunit:linkStatementUnit ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [ rr:constant semunit:assertionalStatementUnit ]
+  ] ;
+
+  # What this SU is "about": the source resource
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap [
+      rr:template "http://example.com/base/{links_source_types}_{links_source_ids}" ;
+      rr:termType rr:IRI
+    ]
+  ] .
+
+<#Links_to>
+  a rr:TriplesMap ;
+  rr:logicalTable [ rr:tableName "be_links" ] ;
+
+  # subject = source resource, but all triples go in the SU graph
+  rr:subjectMap [
+    rr:template "http://example.com/base/{links_source_types}_{links_source_ids}" ;
+    rr:termType rr:IRI ;
+    rr:graphMap [
+      rr:template "http://example.com/base/semunit/link/{links_source_types}_{links_source_ids}__{links_reference_types}__{links_target_types}_{links_target_ids}"
+    ] ;
+  ] ;
+
+  # source <http://example.com/prop/{links_reference_types}> target  in the SU graph
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:template "http://example.com/prop/{links_reference_types}"
+    ] ;
+    rr:objectMap [
+      rr:template "http://example.com/base/{links_target_types}_{links_target_ids}" ;
+      rr:termType rr:IRI
+    ] ;
+  ] .
+
+
+################################################################################
+# 3) COMPOUND UNIT PER PUBLICATION, COLLECTING ALL LINK SUs + DATASET SUs
+#    (normal project AND core project specified-output SUs)
+################################################################################
+
+<Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit>
+  a rr:TriplesMap ;
+
+  # Join publications with links where the publication is either source OR target,
+  # and (optionally) join datasets when they are on the other side of the link.
+  rr:logicalTable [
+    rr:sqlQuery """
+      SELECT DISTINCT
+        p.id                        AS pub_id,
+        l.links_source_types,
+        l.links_source_ids,
+        l.links_reference_types,
+        l.links_target_types,
+        l.links_target_ids,
+
+        -- Dataset side (optional; NULL if no dataset in this link)
+        d.id                        AS id,                 -- dataset id (matches SU mapping)
+        d.project_hash              AS project_hash,       -- normal project SU
+        d.projects_core_hash        AS projects_core_hash  -- core project SU
+      FROM be_publication_metadata p
+      JOIN be_links l
+        ON (
+          (l.links_source_types = 'Publication' AND l.links_source_ids = p.id)
+          OR
+          (l.links_target_types = 'Publication' AND l.links_target_ids = p.id)
+        )
+      LEFT JOIN be_dataset_metadata d
+        ON (
+          (l.links_source_types = 'Dataset' AND l.links_source_ids = d.id)
+          OR
+          (l.links_target_types = 'Dataset' AND l.links_target_ids = d.id)
+        )
+    """
+  ] ;
+
+  # One compound unit per publication
+  rr:subjectMap [
+    rr:template "http://example.com/base/semunit/Infrastructure_ProcessAndService_Environment_Publication_Link_Projects_CompoundUnit/Publication_{pub_id}" ;
+  ] ;
+
+  # Typing of the compound
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [ rr:constant semunit:InfrastructureProcessAndServiceEnvironmentPublicationLinkProjectsCompoundUnit ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate rdf:type ;
+    rr:objectMap [ rr:constant semunit:compoundUnit ]
+  ] ;
+
+  # Say what this compound is about (the publication itself)
+  rr:predicateObjectMap [
+    rr:predicate ex:semanticUnitSubject ;
+    rr:objectMap [
+      rr:template "http://example.com/base/Publication_{pub_id}" ;
+      rr:termType rr:IRI
+    ]
+  ] ;
+
+  # For this publication, collect all associated generic link SUs
+  rr:predicateObjectMap [
+    rr:predicate semunit:hasAssociatedSemanticUnit ;
+    rr:objectMap [
+      rr:template "http://example.com/base/semunit/link/{links_source_types}_{links_source_ids}__{links_reference_types}__{links_target_types}_{links_target_ids}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ] ;
+
+  # For this publication, collect dataset hasSpecifiedOutput SUs (normal projects)
+  rr:predicateObjectMap [
+    rr:predicate semunit:hasAssociatedSemanticUnit ;
+    rr:objectMap [
+      rr:template "http://example.com/base/semunit/hasSpecifiedOutputStatementUnit/{project_hash}_Dataset_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ] ;
+
+  # For this publication, collect dataset hasSpecifiedOutput SUs (core projects)
+  rr:predicateObjectMap [
+    rr:predicate semunit:hasAssociatedSemanticUnit ;
+    rr:objectMap [
+      rr:template "http://example.com/base/semunit/hasSpecifiedOutputStatementUnit/{projects_core_hash}_Dataset_{id}" ;
+      rr:termType rr:IRI ;
+    ] ;
+  ] .
